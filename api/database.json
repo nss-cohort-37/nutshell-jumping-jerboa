@@ -5,6 +5,12 @@
       "email": "macgibbons@gmail.com",
       "password": "1",
       "id": 2
+    },
+    {
+      "name": "bob",
+      "email": "bob@bob.com",
+      "password": "1",
+      "id": 3
     }
   ],
   "messages": [],
