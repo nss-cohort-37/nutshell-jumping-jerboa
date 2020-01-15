@@ -1,40 +1,14 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "macgibbons@gmail.com",
-            "password": "12345"
-        }
-
-    ],
-    "messages": [
-        {
-        "id": 1,
-        "userId": 1,
-        "message": "What's up?"
-        }
-    ],
-    "news": [
-        {
-        "id": 1,
-        "userId": 2,
-        "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
-        "title": "Wormholes Allow Information to Escape Black Holes",
-        "synopsis": "Check out this recent discovery about workholes"
-        }
-    ],
-    "friends": [
-        {
-        "id": 1,
-        "userId": 1,
-        "otherFriendId": 3
-        }
-    ],
-    "tasks": [
-        {
-        "id": 1,
-        "userId": 3,
-        "task": "Take out garbage"
-        }
-    ]
+  "users": [
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons@gmail.com",
+      "password": "1",
+      "id": 2
+    }
+  ],
+  "messages": [],
+  "news": [],
+  "friends": [],
+  "tasks": []
 }
