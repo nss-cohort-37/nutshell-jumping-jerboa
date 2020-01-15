@@ -1,3 +1,4 @@
+
 let news = []
 
 export const useNews = () => news.slice()
