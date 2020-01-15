@@ -4,6 +4,7 @@ const eventHub = document.querySelector(".container")
 
 
 export const RegisterButton = () => {
+
   eventHub.addEventListener("click", clickEvent => {
   console.log("click")
     if (clickEvent.target.id === "register__button") {
@@ -18,4 +19,6 @@ export const RegisterButton = () => {
       dialogElement.close();
     }
   });
+  
+  
 };
