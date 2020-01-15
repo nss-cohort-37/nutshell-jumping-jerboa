@@ -1,3 +1,4 @@
+import { saveUsers } from "../users/usersProvider.js";
 
 
 const eventHub = document.querySelector(".container")
@@ -52,8 +53,10 @@ const registerFormList = () => {
                     password: UserPW
                }
 
-               saveUser(newUserObject).then(
+               saveUsers(newUserObject).then(
                    ()=>{
+                       console.log("saving user");
+                       
                     eventHub.dispatchEvent(new CustomEvent("newAccountRegistered"))
                    }
                )
