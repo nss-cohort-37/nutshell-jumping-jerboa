@@ -46,17 +46,21 @@ const registerFormList = () => {
                const userEmail = document.querySelector("#registerUsername__form").value
                const UserPW = document.querySelector("#registerPassword__form").value
 
-                const message = new CustomEvent("newAccountRegistered", {
-                  detail: {
+               const newUserObject = {
                     name: userName,
                     email: userEmail,
                     password: UserPW
+               }
 
-                    
-                  }
-                })
+               saveUser(newUserObject).then(
+                   ()=>{
+                    eventHub.dispatchEvent(new CustomEvent("newAccountRegistered"))
+                   }
+               )
+
+        
     
-                eventHub.dispatchEvent(message)
+              
             }
           }
         }
