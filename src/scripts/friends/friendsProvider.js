@@ -1,3 +1,4 @@
+
 let friends = []
 
 export const useFriends = () => friends.slice()
