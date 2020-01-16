@@ -7,15 +7,9 @@ import { getNews } from "./news/newsProvider.js";
 
 
 
-getUsers().then(
-    loginFormList
-)
-registerFormList()
-
-
-
-getNews()
-.then(NewsListComponent)
-
+getUsers()
+    .then(loginFormList)
+    .then(registerFormList)
+   
 
 
