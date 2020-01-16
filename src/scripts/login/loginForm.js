@@ -1,4 +1,5 @@
 import { useUsers } from "../users/usersProvider.js";
+import pageLoad from "./pageLoad.js";
 
 
 const eventHub = document.querySelector(".container")
@@ -45,6 +46,7 @@ const loginFormList = () => {
                         sessionStorage.setItem("activeUser", theUser.id)
                         console.log(sessionStorage.getItem("activeUser"))
                         resetTarget.innerHTML=""
+                        pageLoad()
                     }
                         catch {
                             window.alert("youremail or password is incorrect")
