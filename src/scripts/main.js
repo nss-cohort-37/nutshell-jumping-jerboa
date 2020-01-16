@@ -6,12 +6,9 @@ import { getUsers } from "./users/usersProvider.js";
 import eventsList from "./events/eventsList.js";
 
 
-getUsers().then(
-    loginFormList
-)
-registerFormList()
-LoginFormButton()
-
-RegisterButton()
+getUsers()
+    .then(loginFormList)
+    .then(registerFormList)
+   
 
 eventsList()
