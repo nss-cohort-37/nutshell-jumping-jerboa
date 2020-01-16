@@ -23,6 +23,15 @@
       "email": "a;dfj",
       "password": "1",
       "id": 4
+<<<<<<< HEAD
+>>>>>>> master
+=======
+    },
+    {
+      "name": "amon arnoth",
+      "email": "amon arnoth",
+      "password": "666",
+      "id": 5
 >>>>>>> master
     }
   ],
