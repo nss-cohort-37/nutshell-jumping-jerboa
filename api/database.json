@@ -10,5 +10,10 @@
   "messages": [],
   "news": [],
   "friends": [],
-  "tasks": []
+  "tasks": [
+    {
+      "id": 1,
+      "text": "asfasdf"
+    }
+  ]
 }

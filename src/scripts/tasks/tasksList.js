@@ -1,9 +1,9 @@
 import { getTasks, useTasks, deleteTask } from "./tasksProvider.js"
 
-const contentTarget = document.querySelector(".task__Container")
+const contentTarget = document.querySelector(".saved__tasks")
 const eventHub = document.querySelector(".container")
 
-const NoteListComponent = () => {
+const TaskListComponent = () => {
 
     eventHub.addEventListener("taskHasBeenEdited", event => {
         const updatedTask = useTasks()
@@ -54,7 +54,7 @@ const NoteListComponent = () => {
             (individualTask) => {
                 return `
                     <section class="task">
-                        <div>${individualTask.task}</div>
+                        <div>${individualTask.text}</div>
                         <button id="deleteTask--${individualTask.id}">Delete</button>
                         <button id="editTask--${individualTask.id}">Edit</button>
                     </section>
@@ -65,4 +65,4 @@ const NoteListComponent = () => {
 
 }
 
-export default taskListComponent
+export default TaskListComponent

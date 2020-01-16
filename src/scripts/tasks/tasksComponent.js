@@ -1,7 +1,7 @@
 import { saveTasks, getTasks, useTasks, editTask } from "./tasksProvider.js"
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".taskFormContainer")
+const contentTarget = document.querySelector(".task__container")
 
 
 const TaskFormComponent = () => {
@@ -18,7 +18,7 @@ const TaskFormComponent = () => {
         )
 
         document.querySelector("#task-id").value = theFoundedTask.id
-        document.querySelector("#task-text").value = theFoundedTask.task
+        document.querySelector("#task-text").value = theFoundedTask.text
     })
 
     
