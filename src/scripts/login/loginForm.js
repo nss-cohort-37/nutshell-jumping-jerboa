@@ -34,7 +34,7 @@ const loginFormList = () => {
                     const users = useUsers()
                     const loginEmail = document.querySelector("#loginUsername__form").value
                     const loginPW = document.querySelector("#loginPassword__form").value
-                    debugger
+                    
                     const theUser = users.find(
 
                         user => 
@@ -43,6 +43,8 @@ const loginFormList = () => {
                     
                     )
                     console.log(theUser);
+
+                    sessionStorage.setItem("activeUser", theUser.id)
                     
 
                 }
