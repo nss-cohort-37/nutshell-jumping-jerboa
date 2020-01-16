@@ -55,12 +55,12 @@ const TaskFormComponent = () => {
         }
     })
 
-    eventHub.addEventListener("click", clickEvent => {
+     eventHub.addEventListener("click", clickEvent => {
         if (clickEvent.target.id === "showTasks") {
             const message = new CustomEvent("showTaskButtonClicked")
-            eventHub.dispatchEvent(message)
-        }
-    })
+             eventHub.dispatchEvent(message)
+         }
+     })
 
     const render = () => {
         contentTarget.innerHTML = `
@@ -70,9 +70,9 @@ const TaskFormComponent = () => {
                 <div class="task__field">
                     Task: <input type="text" id="task-text" />
                 </div>
-                  
-                <button class="task__field" id="saveTasks">Save Task</button>
                 <button class="task__field" id="showTasks">Show Tasks</button>
+                <button class="task__field" id="saveTasks">Save Task</button>
+                
             </details>
         `
     }

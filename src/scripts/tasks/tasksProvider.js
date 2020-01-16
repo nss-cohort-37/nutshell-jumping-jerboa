@@ -39,6 +39,17 @@ export const saveTasks = task => {
     .then(getTasks)
 }
 
+export const completeTask = (taskId) => {
+  return fetch(`http://localhost:8000/tasks/${taskId}`, {
+    method: "POST",
+    headers: {
+      "content-Type": "application/json"
+    },
+    body: JSON.stringify(task)
+  })
+  .then(getTasks)
+}
+
 export const getTasks = () => {
     // Load database state into application state
     return fetch("http://localhost:8088/tasks")
