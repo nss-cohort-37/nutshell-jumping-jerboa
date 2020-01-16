@@ -5,9 +5,9 @@ const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".login__container")
 
 const loginFormList = () => {
-    contentTarget.innerHTML = 
+    contentTarget.innerHTML =
 
-    `
+        `
     <section>
         <button id="login__button">Login</button>
         <dialog id="loginDetail" class="loginDetail">
@@ -27,31 +27,32 @@ const loginFormList = () => {
     eventHub.addEventListener("keypress", event => {
         if (event.keyCode === 13) {
             if (event.target.id === "loginPassword__form") {
-                if (document.querySelector("#loginUsername__form").value === '' || document.querySelector("#loginPassword__form").value === '' ){
+                if (document.querySelector("#loginUsername__form").value === '' || document.querySelector("#loginPassword__form").value === '') {
                     document.querySelector(".error").innerHTML = "please fill out all fields"
-                } else { 
+                } else {
 
                     const users = useUsers()
                     const loginEmail = document.querySelector("#loginUsername__form").value
                     const loginPW = document.querySelector("#loginPassword__form").value
+                    debugger
+                    const theUser = users.find(
 
-                   const theUser = users.find(
-                        user => {
-                            user.email === loginEmail && user.password === loginPW
-                        }
+                        user => 
+                            user.email == loginEmail && user.password === loginPW
                         
-                        )
-                        console.log(theUser);
-
                     
+                    )
+                    console.log(theUser);
+                    
+
                 }
-                
+
             }
         }
     })
-        
 
-    
+
+
 }
 
 export default loginFormList
