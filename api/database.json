@@ -1,25 +1,5 @@
 {
-  "users": [
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "1",
-      "id": 2
-    },
-    {
-      "name": "John",
-      "email": "john@john.com",
-      "password": "22",
-      "id": 3
-    },
-    {
-      "name": "henry",
-      "email": "a;dfj",
-      "password": "1",
-      "id": 4
-    }
-   
-  ],
+  "users": [],
   "messages": [],
   "news": [],
   "friends": [],
