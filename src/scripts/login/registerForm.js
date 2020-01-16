@@ -23,10 +23,11 @@ const registerFormList = () => {
                     <input type="text" name="username" id="registerUsername__form">
                 
                     <label for="password">password:</label>
-                    <input type="text" name="password" id="registerPassword__form">
+                    <input type="password" name="password" id="registerPassword__form">
+                    
                 
                     <label for="password__confirm">confirm password:</label>
-                    <input type="text" name="confrimPassword" id="registerConfrimPassword__form">
+                    <input type="password" name="confrimPassword" id="registerConfrimPassword__form">
                     <button class='button--close' id="button--close">Close</button>
     
             </dialog>
@@ -34,7 +35,7 @@ const registerFormList = () => {
     
         `
         
-    }
+    } 
     render()
 
     eventHub.addEventListener("keypress", event => {
@@ -61,6 +62,10 @@ const registerFormList = () => {
                    }
                )
 
+               const dialogElement = event.target.parentNode;
+               dialogElement.close();
+
+               sessionStorage.setItem("userId", 1)
         
     
               
@@ -72,3 +77,5 @@ const registerFormList = () => {
 }
 
 export default registerFormList
+
+

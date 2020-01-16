@@ -1,12 +1,5 @@
 {
-  "users": [
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "1",
-      "id": 2
-    }
-  ],
+  "users": [],
   "messages": [],
   "news": [],
   "friends": [],
