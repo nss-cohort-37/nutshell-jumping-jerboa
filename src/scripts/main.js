@@ -22,6 +22,9 @@ getTasks()
 tasksCollection()
 
 
+getUsers()
+    .then(loginFormList)
+    .then(registerFormList)
+   
 
 
-RegisterButton()
