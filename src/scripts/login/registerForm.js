@@ -10,6 +10,7 @@ const registerFormList = () => {
         contentTarget.innerHTML = 
     
         `
+        
         <section>
         
             <button id="register__button">Register Account</button>
@@ -32,6 +33,7 @@ const registerFormList = () => {
     
             </dialog>
         </section>
+        
     
         `
         
