@@ -5,12 +5,9 @@ import { RegisterButton } from "./login/dialogRegister.js";
 import { getUsers } from "./users/usersProvider.js";
 
 
-getUsers().then(
-    loginFormList
-)
-registerFormList()
-LoginFormButton()
-
-RegisterButton()
+getUsers()
+    .then(loginFormList)
+    .then(registerFormList)
+   
 
 

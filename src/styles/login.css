@@ -1,0 +1,37 @@
+.error {
+    color: red
+}
+
+.account__container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.register__card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.formLabel {
+    font-size: 15px;
+    display: flex;
+    align-content: flex-start;
+    margin: 5px 0 5px 0
+}
+
+dialog {
+    border: none;
+    
+}
+
+.erase__form {
+    display: none
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-around;
+}
