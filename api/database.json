@@ -7,10 +7,23 @@
       "id": 2
     },
     {
+<<<<<<< HEAD
       "name": "bob",
       "email": "bob@bob.com",
       "password": "1",
       "id": 3
+=======
+      "name": "John",
+      "email": "john@john.com",
+      "password": "22",
+      "id": 3
+    },
+    {
+      "name": "henry",
+      "email": "a;dfj",
+      "password": "1",
+      "id": 4
+>>>>>>> master
     }
   ],
   "messages": [],
