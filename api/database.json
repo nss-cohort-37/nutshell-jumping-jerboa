@@ -1,7 +1,21 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "tyler",
+      "email": "t@t.com",
+      "password": "5",
+      "id": 1
+    }
+  ],
   "messages": [],
   "news": [],
   "friends": [],
-  "tasks": []
+  "tasks": [],
+  "events": [
+    {
+      "id": "1",
+      "type": "Concert",
+      "location": "Nashville"
+    }
+  ]
 }
