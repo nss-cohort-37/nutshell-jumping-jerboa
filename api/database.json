@@ -1,40 +1,5 @@
 {
-  "users": [
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "1",
-      "id": 2
-    },
-    {
-<<<<<<< HEAD
-      "name": "bob",
-      "email": "bob@bob.com",
-      "password": "1",
-      "id": 3
-=======
-      "name": "John",
-      "email": "john@john.com",
-      "password": "22",
-      "id": 3
-    },
-    {
-      "name": "henry",
-      "email": "a;dfj",
-      "password": "1",
-      "id": 4
-<<<<<<< HEAD
->>>>>>> master
-=======
-    },
-    {
-      "name": "amon arnoth",
-      "email": "amon arnoth",
-      "password": "666",
-      "id": 5
->>>>>>> master
-    }
-  ],
+  "users": [],
   "messages": [],
   "news": [],
   "friends": [],
