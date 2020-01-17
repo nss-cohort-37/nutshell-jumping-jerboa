@@ -17,15 +17,16 @@ const loginFormList = () => {
             contentTarget.innerHTML =
 
             `
-        <section>
-                    <label for="username">email:</label>
-                    <input type="text" name="username" id="loginUsername__form">
+            <section>
+                <label for="username">email:</label>
+                <input type="text" name="username" id="loginUsername__form">
+                <form>
                     <label for="loginpassword">Password:</label>
                     <input type="password" name="loginpassword" id="loginPassword__form">
-                    <div class="error"></div>
-                    <button id="login__button">Log In</button>
-        </section>
-    
+                </form>
+                <div class="error"></div>
+                <button id="login__button">Log In</button>
+            </section>
         `
         }
     })
