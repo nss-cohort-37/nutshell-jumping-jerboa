@@ -1,46 +1,7 @@
 {
-  "users": [
-    {
-      "name": "Tyler",
-      "email": "t@t.com",
-      "password": "5",
-      "id": 1
-    },
-    {
-      "name": "wes",
-      "email": "w@w.com",
-      "password": "1",
-      "id": 2
-    }
-  ],
+  "users": [],
   "messages": [],
   "news": [],
-  "friends": [
-    {
-      "friendId": 1,
-      "userId": 1,
-      "id": 1
-    }
-  ],
+  "friends": [],
   "tasks": [],
-  "events": [
-    {
-      "id": "1",
-      "name": "concert",
-      "location": "Nashville",
-      "date": "March 11th, 2020"
-    },
-    {
-      "id": "2",
-      "name": "Festival",
-      "location": "Memphis",
-      "date": "April 2nd, 2020"
-    },
-    {
-      "id": "WYWcv2g",
-      "name": "h",
-      "location": "h",
-      "date": "h"
-    }
-  ]
-}
+  "events": []
