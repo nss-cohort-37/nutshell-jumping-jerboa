@@ -1,10 +1,9 @@
-import { useNews, editNews, saveNews } from "./newsProvider.js"
+import { useNews, editNews, saveNews, getNews } from "./newsProvider.js"
 
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".news__container")
 const entryLog = document.querySelector(".newsForm__container")
-
 
 
 
@@ -38,7 +37,8 @@ export const NewsListComponent = () => {
           id: parseInt(document.querySelector("#news-id").value, 10),
           title: document.querySelector("#news-title").value,
           synopsis: document.querySelector("#news-synopsis").value,
-          url: document.querySelector("#news-url").value
+          url: document.querySelector("#news-url").value,
+          userId: currentUser
         }
       
       editNews(editedNews).then(() => {
@@ -50,6 +50,7 @@ export const NewsListComponent = () => {
             title: document.querySelector("#news-title").value,
             synopsis: document.querySelector("#news-synopsis").value,
             url: document.querySelector("#news-url").value,
+            userId: currentUser,
             date: Date.now()
 
         }
