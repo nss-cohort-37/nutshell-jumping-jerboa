@@ -64,7 +64,7 @@ eventHub.addEventListener("click", clickEvent => {
 
 })
 
-const NewsDated = () => {debugger
+const NewsDated = () => {
 const theNews = useNews()
 const sortedByDate = theNews.sort(
         (currentEntry, nextEntry) =>

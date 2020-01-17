@@ -1,7 +1,35 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "Tyler",
+      "email": "t@t.com",
+      "password": "5",
+      "id": 1
+    }
+  ],
   "messages": [],
-  "news": [],
+  "news": [
+    {
+      "id": 1,
+      "title": "hahah",
+      "synopsis": "nahahj",
+      "url": "hshshshsh"
+    }
+  ],
   "friends": [],
   "tasks": [],
-  "events": []
+  "events": [
+    {
+      "id": 2,
+      "name": "lslslsl",
+      "location": "mnmnm",
+      "date": "vcvcv"
+    },
+    {
+      "id": 3,
+      "name": "gagag",
+      "location": "gag",
+      "date": "gagag"
+    }
+  ]
+}

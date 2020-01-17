@@ -1,4 +1,4 @@
-import { saveEvents, useEvents } from "./eventsProvider.js"
+import { saveEvents, useEvents, editEvents } from "./eventsProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".newEvents__container")
@@ -39,13 +39,12 @@ const eventComponent = () => {
                     date: document.querySelector("#event__date").value
                 }
                 
-                editEvent(editedEvent).then(() => {
+                editEvents(editedEvent).then(() => {
                     eventHub.dispatchEvent(new CustomEvent("eventHasBeenEdited"))
                 })
             } else {
                 
                 const newEvent = {
-                    id: parseInt(document.querySelector("#event__id").value, 10),
                     name: document.querySelector("#event__name").value,
                     location: document.querySelector("#event__location").value,
                     date: document.querySelector("#event__date").value
@@ -79,7 +78,7 @@ const eventComponent = () => {
                     Date: <input type="text" id="event__date" />
                 </div>
 
-                <button class="event__field" id="saveEvent">Save New Event</button>
+                <button class="event__field" id="saveEvent">New Event</button>
 
                 
         `
