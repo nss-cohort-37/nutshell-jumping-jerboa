@@ -29,36 +29,19 @@
       "id": 1
     },
     {
-      "title": "test 2`",
-      "synopsis": "testing again",
-      "url": "test2.com",
-      "userId": 5,
-      "date": 1579291747266,
-      "id": 2
-    },
-    {
-      "title": "Johns news",
-      "synopsis": "this is johns",
-      "url": "john.com",
-      "userId": 5,
-      "date": 1579292241516,
-      "id": 3
-    },
-    {
-      "title": "joe test",
-      "synopsis": "joe",
-      "url": "joe.com",
-      "userId": 5,
-      "date": 1579292758720,
-      "id": 4
-    },
-    {
       "title": "THIS JOE",
       "synopsis": "JOE",
       "url": "JOEJOE",
       "userId": 7,
       "date": 1579293147243,
       "id": 5
+    },
+    {
+      "id": 6,
+      "title": "edited",
+      "synopsis": "edited",
+      "url": "this is edited",
+      "userId": 5
     }
   ],
   "friends": [],
