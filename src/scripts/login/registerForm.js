@@ -19,7 +19,7 @@ const registerFormList = () => {
             
             <dialog id="registerInfo" class="registerInfo">
                 
-          `
+        
           <section>
           
               
