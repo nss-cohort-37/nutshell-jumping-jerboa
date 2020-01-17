@@ -61,6 +61,8 @@ const loginFormList = () => {
                         const eraseForm = document.getElementById("login__form")
                         eraseForm.classList.add("erase__form")
                         loadPage.classList.remove("hide__content")
+                        const message = new CustomEvent("userLoggedIn")
+                        eventHub.dispatchEvent(message)
                         
                     }
                         catch {

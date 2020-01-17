@@ -5,6 +5,24 @@
       "email": "t@t.com",
       "password": "5",
       "id": 1
+    },
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "name": "John Smith",
+      "email": "john@jsmith.com",
+      "password": "1",
+      "id": 6
+    },
+    {
+      "name": "joe",
+      "email": "joe@joe.com",
+      "password": "joe",
+      "id": 7
     }
   ],
   "messages": [],
