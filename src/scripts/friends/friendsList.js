@@ -1,9 +1,12 @@
 import { useUsers } from "../users/usersProvider.js";
 import Friend from "./friends.js";
+import { saveFriends } from "./friendsProvider.js";
 
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".friendsList__container")
+const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+console.log(currentUser);
 
 
 
@@ -68,23 +71,34 @@ const friendsList = () => {
             
         }
     })
+    // eventHub.addEventListener("click", event => {
+    //     if(event.target.id === "")
+    // })
     
     eventHub.addEventListener("click", event => {
         if(event.target.id.startsWith("friendAdd--")){
             console.log("addfriend clicked")
             const [deletePrefix, friendId] = event.target.id.split("--")
+            const friendToSave = {
+                friendId: parseInt(friendId, 10),
+                userId: currentUser
+            }
          
                      const friendAddedEvent = new CustomEvent("friendAddedButtonClicked", {
                          detail: {
-                             friendId: friendId
+                             friendId: parseInt(friendId, 10),
+                             userId: currentUser
                          }
                      })
-
+                
                     eventHub.dispatchEvent(friendAddedEvent)
+                    saveFriends(friendToSave)
 
             
         }
     })
+
+    
     render(users)
 }
 

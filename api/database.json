@@ -170,7 +170,20 @@
     }
   ],
   "messages": [],
-  "news": [],
-  "friends": [],
+  "news": [
+    {
+      "id": 2,
+      "userId": 15,
+      "url": "aksldjf;a",
+      "title": "alsdkjf"
+    }
+  ],
+  "friends": [
+    {
+      "friendId": 2,
+      "userId": 15,
+      "id": 1
+    }
+  ],
   "tasks": []
 }
