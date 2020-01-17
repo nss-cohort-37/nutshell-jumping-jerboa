@@ -17,7 +17,7 @@ const eventComponent = () => {
                 return currentEventObject.id === parseInt(eventToBeEdited, 10)
             }
         )
-debugger
+
         document.querySelector("#event__id").value = foundEvent.id
         document.querySelector("#event__name").value = foundEvent.name
         document.querySelector("#event__location").value = foundEvent.location
@@ -32,18 +32,18 @@ debugger
             const hiddenInputValue = document.querySelector("#event__id").value
 
             if (hiddenInputValue !== "") {
-                const editedEvent = {
+                const editedEvent = { 
                     id: parseInt(document.querySelector("#event__id").value, 10),
                     name: document.querySelector("#event__name").value,
                     location: document.querySelector("#event__location").value,
                     date: document.querySelector("#event__date").value
                 }
-
+                
                 editEvent(editedEvent).then(() => {
                     eventHub.dispatchEvent(new CustomEvent("eventHasBeenEdited"))
                 })
             } else {
-
+                
                 const newEvent = {
                     id: parseInt(document.querySelector("#event__id").value, 10),
                     name: document.querySelector("#event__name").value,
