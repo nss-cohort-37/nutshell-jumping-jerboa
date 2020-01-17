@@ -17,6 +17,12 @@
       "email": "joe@joe.com",
       "password": "joe",
       "id": 7
+    },
+    {
+      "name": "amon",
+      "email": "amonarnoth",
+      "password": "666",
+      "id": 8
     }
   ],
   "messages": [],
