@@ -1,62 +1,69 @@
-import { useEvents, deleteEvents } from "./eventsProvider.js"
+import { useEvents, deleteEvents, getEvents } from "./eventsProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".events__container")
 
 const EventsListComponent = () => {
 
-    console.log("listing the events")
+    eventHub.addEventListener("userLoggedIn", event => {
+        const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
 
-    eventHub.addEventListener("eventHasBeenEdited", event => {
-        const updatedEvents = useEvents()
-        render(updatedEvents)
-    })
+        console.log("listing the events")
 
-    eventHub.addEventListener("click", clickEvent => {
-        if (clickEvent.target.id.startsWith("editEvent__")) {
-            const [deletePrefix, eventId] = clickEvent.target.id.split("__")
+        eventHub.addEventListener("eventHasBeenEdited", event => {
+            const updatedEvents = useEvents()
+            render(updatedEvents)
+        })
 
-            const editEvent = new CustomEvent("editButtonClicked", {
-                detail: {
-                    eventId: eventId
-                }
-            })
+        eventHub.addEventListener("click", clickEvent => {
+            if (clickEvent.target.id.startsWith("editEvent__")) {
+                const [deletePrefix, eventId] = clickEvent.target.id.split("__")
 
-            eventHub.dispatchEvent(editEvent)
+                const editEvent = new CustomEvent("editButtonClicked", {
+                    detail: {
+                        eventId: eventId
+                    }
+                })
+
+                eventHub.dispatchEvent(editEvent)
+            }
+
+            if (clickEvent.target.id.startsWith("deleteEvent__")) {
+                const [deletePrefix, eventId] = clickEvent.target.id.split("__")
+
+                deleteEvents(eventId).then(
+                    () => {
+                        const theNewEvents = useEvents()
+                        render(theNewEvents)
+                    }
+                )
+            }
+        })
+
+        const renderEventsAgain = () => {
+            const allTheEvents = useEvents()
+            render(allTheEvents)
+
         }
 
-        if (clickEvent.target.id.startsWith("deleteEvent__")) {
-            const [deletePrefix, eventId] = clickEvent.target.id.split("__")
+        eventHub.addEventListener("eventCreated", event => {
+            renderEventsAgain()
+        })
 
-            deleteEvents(eventId).then(
-                () => {
-                    const theNewEvents = useEvents()
-                    render(theNewEvents)
-                }
-            )
-        }
-    })
+        eventHub.addEventListener("showEventButtonClicked", event => {
+            renderEventsAgain()
+        })
 
-    const renderEventsAgain = () => {
-        const allTheEvents = useEvents()
-        render(allTheEvents)
+        getEvents(currentUser).then(
+            () => {
 
-    }
 
-    eventHub.addEventListener("eventCreated", event => {
-        renderEventsAgain()
-    })
+                const eventsCollection = useEvents()
 
-    eventHub.addEventListener("showEventButtonClicked", event => {
-        renderEventsAgain()
-    })
-
-    const eventsCollection = useEvents()
-
-    const render = (eventsCollection) => {
-        contentTarget.innerHTML = eventsCollection.map(
-            (individualEvent) => {
-                return `
+                const render = (eventsCollection) => {
+                    contentTarget.innerHTML = eventsCollection.map(
+                        (individualEvent) => {
+                            return `
                     <section class="event">
                         <div>${individualEvent.name}</div>
                         <div>Location: ${individualEvent.location}</div>
@@ -67,13 +74,14 @@ const EventsListComponent = () => {
                     
                     <section>                
                 `
-            }
-        ).join("")
+                        }
+                    ).join("")
+                }
+
+                render(eventsCollection)
+
+            })
+    })
     }
-
-    render(eventsCollection)
-
-}
-
 
 export default EventsListComponent
