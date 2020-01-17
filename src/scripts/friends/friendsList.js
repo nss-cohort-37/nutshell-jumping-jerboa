@@ -19,8 +19,10 @@ const friendsList = () => {
     
         contentTarget.innerHTML = `
         <div class="search">
-        <div>search entries:</div>
+        <div>search users:</div>
         <input type="text" id="friend__searchBox">
+        <button id="reset__friendSearch">reset search</button>
+        <button id="show__userFriends"Show Friends</button>
         </div>
         ${users.map(
             user => Friend(user)
@@ -45,10 +47,10 @@ const friendsList = () => {
       })
 
       eventHub.addEventListener("friend__searchInitiated", event => {
-        const searchTerm = event.detail.search
+        const searchTerm = event.detail.search.toUpperCase()
         const users = useUsers()
          const matchingUsers = users.filter(user => {
-           if (user.name.includes(searchTerm) || user.email.includes(searchTerm)) {
+           if (user.name.toUpperCase().includes(searchTerm) || user.email.includes(searchTerm)) {
              return user
            }
          })
@@ -58,6 +60,31 @@ const friendsList = () => {
            contentTarget.innerHTML = "oops! no matching friends..."
          }
       })
+
+    eventHub.addEventListener("click", event => {
+        if(event.target.id === "reset__friendSearch"){
+            console.log("resetting search");
+            render(users)
+            
+        }
+    })
+    
+    eventHub.addEventListener("click", event => {
+        if(event.target.id.startsWith("friendAdd--")){
+            console.log("addfriend clicked")
+            const [deletePrefix, friendId] = event.target.id.split("--")
+         
+                     const friendAddedEvent = new CustomEvent("friendAddedButtonClicked", {
+                         detail: {
+                             friendId: friendId
+                         }
+                     })
+
+                    eventHub.dispatchEvent(friendAddedEvent)
+
+            
+        }
+    })
     render(users)
 }
 
