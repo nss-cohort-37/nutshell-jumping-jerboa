@@ -119,10 +119,71 @@
       "email": "macgibbons@gmail.com",
       "password": "12345",
       "id": 20
+    },
+    {
+      "name": "John Smith",
+      "email": "johnsmith@aol.com",
+      "password": "123",
+      "id": 21
+    },
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons@gmail.com",
+      "password": "123",
+      "id": 22
+    },
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons1@gmail.com",
+      "password": "123",
+      "id": 23
+    },
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons2@gmail.com",
+      "password": "123",
+      "id": 24
+    },
+    {
+      "name": "asdf",
+      "email": "john@john.com",
+      "password": "1",
+      "id": 25
+    },
+    {
+      "name": "John Gibbons",
+      "email": "stayingfortheweekendband@gmail.com",
+      "password": "123",
+      "id": 26
+    },
+    {
+      "name": "John Gibbons",
+      "email": "123@123.com",
+      "password": "mac",
+      "id": 27
+    },
+    {
+      "name": "Mac Gibbons",
+      "email": "macgibbons@gmail.com5",
+      "password": "mac",
+      "id": 28
     }
   ],
   "messages": [],
-  "news": [],
-  "friends": [],
+  "news": [
+    {
+      "id": 2,
+      "userId": 15,
+      "url": "aksldjf;a",
+      "title": "alsdkjf"
+    }
+  ],
+  "friends": [
+    {
+      "friendId": 2,
+      "userId": 15,
+      "id": 1
+    }
+  ],
   "tasks": []
 }
