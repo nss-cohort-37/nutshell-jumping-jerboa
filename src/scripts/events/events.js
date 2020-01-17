@@ -4,6 +4,9 @@ const event = (events) => {
             <div>
                 the event is ${events.type}
             </div>
+            <div>
+                Location: ${events.location}
+            </div>
         
         </section>
     
