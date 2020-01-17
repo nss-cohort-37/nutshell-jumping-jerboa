@@ -5,8 +5,7 @@ import { getUsers } from "./users/usersProvider.js";
 import { getNews } from "./news/newsProvider.js";
 import { NewsListComponent } from "./news/newsList.js";
 import {NewsComponent} from "./news/news.js"
-
-
+import friendsList from "./friends/friendsList.js";
 
 
 getUsers()
@@ -17,6 +16,7 @@ getNews()
   .then(NewsComponent)
  
 
+    .then(friendsList)
    
 
 
