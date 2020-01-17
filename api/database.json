@@ -172,6 +172,43 @@
   "messages": [],
   "news": [
     {
+<<<<<<< HEAD
+      "title": "hhhh",
+      "synopsis": "",
+      "url": "",
+      "date": 1579275608512,
+      "id": 7
+    },
+    {
+      "title": "hhhh NOW",
+      "synopsis": "",
+      "url": "",
+      "date": 1579277446689,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "title": "7",
+      "synopsis": "",
+      "url": ""
+    },
+    {
+      "title": "2",
+      "synopsis": "",
+      "url": "",
+      "date": 1579286634168,
+      "id": 10
+    },
+    {
+      "title": "3",
+      "synopsis": "",
+      "url": "",
+      "date": 1579287016789,
+      "id": 11
+    }
+  ],
+  "friends": [],
+=======
       "id": 2,
       "userId": 15,
       "url": "aksldjf;a",
@@ -185,5 +222,6 @@
       "id": 1
     }
   ],
+>>>>>>> fcbb3c971a261e55fef20fe21e7f015d5f40a309
   "tasks": []
 }
