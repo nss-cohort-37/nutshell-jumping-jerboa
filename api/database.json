@@ -5,6 +5,12 @@
       "email": "t@t.com",
       "password": "5",
       "id": 1
+    },
+    {
+      "name": "wes",
+      "email": "w@w.com",
+      "password": "1",
+      "id": 2
     }
   ],
   "messages": [],
@@ -14,8 +20,15 @@
   "events": [
     {
       "id": "1",
-      "type": "Concert",
-      "location": "Nashville"
+      "name": "concert",
+      "location": "Nashville",
+      "date": "March 11th, 2020"
+    },
+    {
+      "id": "SMsUeRa",
+      "name": "f",
+      "location": "f",
+      "date": "f"
     }
   ]
 }

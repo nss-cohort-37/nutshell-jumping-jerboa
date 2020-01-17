@@ -1,24 +1,79 @@
-import { useEvents } from "./eventsProvider.js"
-import { useUsers } from "../users/usersProvider.js"
+import { useEvents, deleteEvents } from "./eventsProvider.js"
 
-// const eventsList = () => {
-//     console.log("listing the events")
-// }
-
-// export default eventsList
-
-
+const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".events__container")
 
-export const EventList = () => {
-    const events = useEvents()
+const EventsListComponent = () => {
 
-    const render = () => {
-        contentTarget.innerHTML = events.map(event => {
-            const type = events.find(type => type.id === useUsers.eventsId)
-        }).join("")
+    console.log("listing the events")
+
+    eventHub.addEventListener("eventHasBeenEdited", event => {
+        const updatedEvents = useEvents()
+        render(updatedEvents)
+    })
+
+    eventHub.addEventListener("click", clickEvent => {
+        if (clickEvent.target.id.startsWith("editEvent__")) {
+            const [deletePrefix, eventId] = clickEvent.target.id.split("__")
+
+            const editEvent = new CustomEvent("editButtonClicked", {
+                detail: {
+                    eventId: eventId
+                }
+            })
+
+            eventHub.dispatchEvent(editEvent)
+        }
+
+        if (clickEvent.target.id.startsWith("deleteEvent__")) {
+            const [deletePrefix, eventId] = clickEvent.target.id.split("__")
+
+            deleteEvents(eventId).then(
+                () => {
+                    const theNewEvents = useEvents()
+                    render(theNewEvents)
+                }
+            )
+        }
+    })
+
+    const renderEventsAgain = () => {
+        const allTheEvents = useEvents()
+        render(allTheEvents)
+
     }
-    render()
+
+    eventHub.addEventListener("eventCreated", event => {
+        renderEventsAgain()
+    })
+
+    eventHub.addEventListener("showEventButtonClicked", event => {
+        renderEventsAgain()
+    })
+
+    const eventsCollection = useEvents()
+
+    const render = (eventsCollection) => {
+        contentTarget.innerHTML = eventsCollection.map(
+            (individualEvent) => {
+                return `
+                    <section class="event">
+                        <div>${individualEvent.name}</div>
+                        <div>Location: ${individualEvent.location}</div>
+                        <div>Date of Event: ${individualEvent.date}</div>
+                        <button id="deleteEvent__${individualEvent.id}">Delete Event</button>
+                        <button id="editEvent__${individualEvent.id}">Edit Event</button>
+
+                    
+                    <section>                
+                `
+            }
+        ).join("")
+    }
+
+    render(eventsCollection)
+
 }
 
-export default EventList
+
+export default EventsListComponent
