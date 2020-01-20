@@ -32,6 +32,7 @@ const TaskFormComponent = () => {
                 const editedTask = {
                     id: parseInt(document.querySelector("#task-id").value, 10),
                     text: document.querySelector("#task-text").value,
+                    userId: parseInt(sessionStorage.getItem("activeUser"), 10)
                    
                 }
 
@@ -42,6 +43,8 @@ const TaskFormComponent = () => {
                 
                 const newTask = {
                     text: document.querySelector("#task-text").value,
+                    userId: parseInt(sessionStorage.getItem("activeUser"), 10)
+                   
                     
                 }
 
