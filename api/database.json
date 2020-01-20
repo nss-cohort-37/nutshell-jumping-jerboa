@@ -1,6 +1,12 @@
 {
   "users": [
     {
+      "name": "Tyler",
+      "email": "t@t.com",
+      "password": "5",
+      "id": 1
+    },
+    {
       "name": "Mac Gibbons",
       "email": "macgibbons@gmail.com",
       "password": "12345",
@@ -19,38 +25,87 @@
       "id": 7
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "id": 1,
+      "message": "a;slkdfjas;d",
+      "userId": 7,
+      "friendId": 5
+    }
+  ],
   "news": [
     {
-      "title": "test",
-      "synopsis": "this is a test",
-      "url": "test.com",
-      "date": 1579291697311,
+      "id": 1,
+      "title": "hahah",
+      "synopsis": "nahahj",
+      "url": "hshshshsh"
+    },
+    {
+      "title": ";aldksf",
+      "synopsis": "asdfa",
+      "url": "asdfsd",
+      "userId": 5,
+      "date": 1579533485016,
+      "id": 2
+    },
+    {
+      "title": "afsds",
+      "synopsis": "asdfasd",
+      "url": "asdfasd",
+      "userId": 5,
+      "date": 1579533506637,
+      "id": 3
+    },
+    {
+      "title": "asdfads",
+      "synopsis": "afsdfas",
+      "url": "asdfasaf",
+      "userId": 5,
+      "date": 1579533513507,
+      "id": 4
+    }
+  ],
+  "friends": [
+    {
+      "friendId": 1,
+      "userId": 5,
       "id": 1
     },
     {
-      "title": "THIS JOE",
-      "synopsis": "JOE",
-      "url": "JOEJOE",
-      "userId": 7,
-      "date": 1579293147243,
-      "id": 5
+      "friendId": 5,
+      "userId": 5,
+      "id": 2
     },
     {
-      "id": 6,
-      "title": "edited",
-      "synopsis": "edited",
-      "url": "this is edited",
-      "userId": 5
+      "friendId": 6,
+      "userId": 5,
+      "id": 3
     },
     {
-      "id": 7,
-      "title": "mac2",
-      "synopsis": "mac2",
-      "url": "mac2",
-      "userId": 5
+      "friendId": 7,
+      "userId": 5,
+      "id": 4
     }
   ],
-  "friends": [],
-  "tasks": []
+  "tasks": [],
+  "events": [
+    {
+      "id": 2,
+      "name": "lslslsl",
+      "location": "nnnnnn",
+      "date": "vcvcv"
+    },
+    {
+      "name": "test",
+      "location": "test",
+      "date": "test",
+      "id": 3
+    },
+    {
+      "name": "test2",
+      "location": "test2",
+      "date": "test2",
+      "id": 4
+    }
+  ]
 }

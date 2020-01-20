@@ -16,6 +16,20 @@ body{
     padding: 10px;
 }
 
-.middle {
+/* .middle {
     margin: 10px 20px 10px 20px;
+} */
+
+.news__container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid purple;
+
+}
+
+.events__container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid purple;
+
 }

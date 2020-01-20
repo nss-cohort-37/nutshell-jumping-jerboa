@@ -6,3 +6,27 @@
     align-items: center;
     margin: 10px 0 10px 0;
 }
+
+.event__card {
+    
+
+        border: 1px solid purple;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 5px 10px 5px;
+   
+}
+
+.news__card {
+    
+    
+    border: 1px solid purple;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px 10px 5px;
+
+}

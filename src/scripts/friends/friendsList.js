@@ -25,7 +25,7 @@ const friendsList = () => {
         <div>search users:</div>
         <input type="text" id="friend__searchBox">
         <button id="reset__friendSearch">reset search</button>
-        <button id="show__userFriends"Show Friends</button>
+        <button id="show__userFriends">show my friends</button>
         </div>
         ${users.map(
             user => Friend(user)
