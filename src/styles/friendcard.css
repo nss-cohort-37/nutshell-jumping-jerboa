@@ -34,10 +34,27 @@
 .task__card {
 
     border: 1px solid purple;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px 10px 5px;
+    flex-basis: 20%;
+    line-height: 1.5;
+    text-align: center
+}
+
+.message__card {
+
+    border: 1px solid purple;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 5px 10px 5px;
     flex-basis: 20%;
+}
+
+.save__task {
+    display: flex
 }

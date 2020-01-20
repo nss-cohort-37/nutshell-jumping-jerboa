@@ -84,7 +84,7 @@ export const MessageComponent = () => {
           `
           <input type="hidden" id="message-id" />
           <input type="text" name="title" id="message">  
-            <button class='saveNews' id="saveMessage">Save Message</button> 
+            <button class="saveMessage--button" id="saveMessage">Save Message</button> 
 
           ${
             theMessage.map(

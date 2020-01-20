@@ -5,9 +5,9 @@ const messageCard = (messageObject) => {
     
     <section class="message__card">
             
-              <div> Message: ${messageObject.message}</div>
-              <button id="message--user${messageObject.id}"> ${messageObject.user.name}</button>
-              <button id="editMessage--${messageObject.id}">Edit</button>
+            <div class="messageName" id="message--user${messageObject.id}"> ${messageObject.user.name} </div>
+              <div> -"${messageObject.message}"</div>
+              <div class="edit" id="editMessage--${messageObject.id}">edit</div>
             </section>
             
             `

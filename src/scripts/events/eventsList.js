@@ -91,8 +91,8 @@ const EventsListComponent = () => {
                                 <div>${individualEvent.name}</div>
                                 <div>Location: ${individualEvent.location}</div>
                                 <div>Date of Event: ${individualEvent.date}</div>
-                                <button id="deleteEvent__${individualEvent.id}">Delete Event</button>
-                                <button id="editEvent__${individualEvent.id}">Edit Event</button>
+                                <div class="edit" id="deleteEvent__${individualEvent.id}">Delete Event</div>
+                                <div class="edit" id="editEvent__${individualEvent.id}">Edit Event</div>
                                 
                                 
                                 </section>                

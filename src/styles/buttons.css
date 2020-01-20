@@ -14,3 +14,20 @@ button:hover {
     background-color: magenta;
     cursor: pointer;
 }
+
+.edit {
+    color: gray;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 11px;
+    text-transform: lowercase
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: blue
+}
+
+.card__buttons {
+    display: flex;
+}

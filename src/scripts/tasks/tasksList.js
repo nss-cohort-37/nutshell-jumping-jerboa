@@ -91,9 +91,11 @@ const TaskListComponent = () => {
                            return `
                                <section id="task--${individualTask.id}" class="task__card">
                                    <div>${individualTask.text}</div>
-                                   <button id="deleteTask--${individualTask.id}">Delete</button>
-                                   <button id="editTask--${individualTask.id}">Edit</button>
                                    <button id="completeTask--${individualTask.id}">Complete</button>
+                                   <div class="card__buttons">
+                                    <div class="edit" id="deleteTask--${individualTask.id}">Delete</div>
+                                    <div class="edit" id="editTask--${individualTask.id}">edit</div>
+                                   </div>
                                </section>
                            `
                        }
