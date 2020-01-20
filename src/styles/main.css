@@ -1,10 +1,10 @@
 @import 'login.css';
+@import 'buttons.css';
+@import 'friendcard.css';
 
 .completedTask {
   display: none;
 }
-@import 'buttons.css';
-@import 'friendcard.css';
 
 body{
     font-family: Arial, Helvetica, sans-serif
