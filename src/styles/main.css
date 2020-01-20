@@ -2,7 +2,6 @@
 @import 'buttons.css';
 @import 'friendcard.css';
 
-
 .completedTask {
   display: none;
 }
@@ -36,6 +35,7 @@ body{
     display: flex;
     padding: 10px;
     border: 1px solid purple;
+    justify-content: center
 
 }
 
@@ -44,5 +44,8 @@ body{
     flex-wrap: wrap;
     padding: 10px;
     border: 1px solid purple;
-
+    overflow: scroll;
+    height: 210px;
+    justify-content: center;
 }
+

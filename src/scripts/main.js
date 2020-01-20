@@ -9,7 +9,7 @@ import tasksCollection from "./tasks/tasksList.js";
 
 import { getUsers } from "./users/usersProvider.js";
 import { getEvents, useEvents } from "./events/eventsProvider.js";
-import eventComponent from "./events/events.js";
+import {eventComponent} from "./events/events.js";
 import EventsListComponent from "./events/eventsList.js";
 import { getNews } from "./news/newsProvider.js";
 import { NewsListComponent } from "./news/newsList.js";

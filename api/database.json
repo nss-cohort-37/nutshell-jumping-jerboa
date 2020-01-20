@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "name": "Tyler",
-      "email": "t@t.com",
-      "password": "5",
-      "id": 1
-    },
-    {
       "name": "Mac Gibbons",
       "email": "macgibbons@gmail.com",
       "password": "12345",
@@ -25,66 +19,13 @@
       "id": 7
     },
     {
-      "name": "John",
-      "email": "ggsmoustache@gmail.com",
-      "password": "password",
+      "name": "Tyler",
+      "email": "Tyler",
+      "password": "1",
       "id": 8
-    },
-    {
-      "name": "John",
-      "email": "ggsmoustache@gmail.com",
-      "password": "password",
-      "id": 9
-    },
-    {
-      "name": "John",
-      "email": "1234",
-      "password": "password",
-      "id": 10
-    },
-    {
-      "name": "John",
-      "email": "1234",
-      "password": "password",
-      "id": 11
-    },
-    {
-      "name": "John G",
-      "email": "2144",
-      "password": "password",
-      "id": 12
-    },
-    {
-      "name": "John G",
-      "email": "2144",
-      "password": "password",
-      "id": 13
-    },
-    {
-      "name": "test",
-      "email": "asdfdsa",
-      "password": "password",
-      "id": 14
-    },
-    {
-      "name": "test",
-      "email": "asdfdsa",
-      "password": "password",
-      "id": 15
-    },
-    {
-      "name": "test",
-      "email": "asdf",
-      "password": "password",
-      "id": 16
-    },
-    {
-      "name": "test",
-      "email": "asdf",
-      "password": "password",
-      "id": 17
     }
   ],
+<<<<<<< HEAD
   "messages": [
     {
       "id": 1,
@@ -186,4 +127,11 @@
       "id": 6
     }
   ]
+=======
+  "messages": [],
+  "news": [],
+  "friends": [],
+  "tasks": [],
+  "events": []
+>>>>>>> master
 }
