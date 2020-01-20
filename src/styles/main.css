@@ -1,4 +1,8 @@
 @import 'login.css';
+
+.completedTask {
+  display: none;
+}
 @import 'buttons.css';
 @import 'friendcard.css';
 
