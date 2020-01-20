@@ -35,13 +35,15 @@ export const NewsComponent = () => {
             (newsObject) => {
               return `
             
-            <section class="news__card">
+            <section class="card news__card">
+            <div class="card-body">
+            <div class=card-title"">${newsObject.title}</div>
+            <div> Summary: ${newsObject.synopsis}</div>
+            <div> Url: ${newsObject.url}</div>
+            <button class="btn btn-primary" id="editNews--${newsObject.id}">Edit</button>
+            <button class="btn btn-primary" id="deleteNews--${newsObject.id}">Delete</button>
             
-              <div> Title: ${newsObject.title}</div>
-              <div> Summary: ${newsObject.synopsis}</div>
-              <div> Url: ${newsObject.url}</div>
-              <button id="editNews--${newsObject.id}">Edit</button>
-              <button id="deleteNews--${newsObject.id}">Delete</button>
+            </div>
             
             
             </section>

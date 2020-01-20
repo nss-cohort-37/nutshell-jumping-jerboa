@@ -48,6 +48,8 @@ const loginFormList = () => {
                 const loginPW = document.querySelector("#loginPassword__form").value
                 if (document.querySelector("#loginUsername__form").value === '' || document.querySelector("#loginPassword__form").value === '') {
                     error.innerHTML = "please fill out all fields"
+                    error.classList.add("alert")
+                    error.classList.add("alert-danger")
                 } else {
                     try {
                         const theUser =users.find(user =>{

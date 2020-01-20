@@ -5,7 +5,7 @@ const contentTarget = document.querySelector(".newEvents__container")
 const entryLog = document.querySelector(".newEvents__container")
 
 export const eventComponent = () => {
-
+    
     
     eventHub.addEventListener("editButtonClicked", event => {
         const eventToBeEdited = event.detail.eventId
@@ -28,7 +28,9 @@ export const eventComponent = () => {
 
     eventHub.addEventListener("click", clickEvent => {
         if (clickEvent.target.id === "saveEvent") {
-
+            
+            const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+            
             const hiddenInputValue = document.querySelector("#event__id").value
 
             if (hiddenInputValue !== "") {
@@ -47,7 +49,8 @@ export const eventComponent = () => {
                 const newEvent = {
                     name: document.querySelector("#event__name").value,
                     location: document.querySelector("#event__location").value,
-                    date: document.querySelector("#event__date").value
+                    date: document.querySelector("#event__date").value,
+                    userId: currentUser
                 }
 
                 saveEvents(newEvent).then(

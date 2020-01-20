@@ -2,14 +2,15 @@
 
 import { getTasks, useTasks, deleteTask } from "./tasksProvider.js"
 
-const contentTarget = document.querySelector(".saved__tasks")
+const contentTarget = document.querySelector(".task__container")
 const eventHub = document.querySelector(".container")
 
 const TaskListComponent = () => {
-
+  const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+  const tasks = useTasks()
   eventHub.addEventListener("userLoggedIn", event => {
 
-    const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+    
     
     getTasks(currentUser).then(
       () =>{
@@ -79,9 +80,7 @@ const TaskListComponent = () => {
           })
           
           
-           eventHub.addEventListener("showTaskButtonClicked", event => {
-                 renderTasksAgain()
-             })
+    
             
              
              
@@ -91,7 +90,7 @@ const TaskListComponent = () => {
                      contentTarget.innerHTML = tasksCollection.map(
                          (individualTask) => {
                              return `
-                                 <section id="task--${individualTask.id}" class="task">
+                                 <section id="task--${individualTask.id}" class="task__card">
                                      <div>${individualTask.text}</div>
                                      <button id="deleteTask--${individualTask.id}">Delete</button>
                                      <button id="editTask--${individualTask.id}">Edit</button>
@@ -103,7 +102,14 @@ const TaskListComponent = () => {
                      ).join("")
                  }
             
-           
+           getTasks(currentUser).then( () => {
+
+             const tasks = useTasks()
+             render(tasks)
+
+           }
+             
+             )
                 
                    
                  }
