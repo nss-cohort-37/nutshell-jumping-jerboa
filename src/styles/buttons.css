@@ -7,7 +7,9 @@ button {
     padding: 10px;
     font-size: 15pt;
 }
-
+.btn {
+    background-color: purple !important
+}
 button:hover {
     background-color: magenta;
     cursor: pointer;

@@ -27,10 +27,12 @@ getUsers().then(
 registerFormList()
 // LoginFormButton()
 // RegisterButton()
-TaskFormComponent()
-TaskListComponent()
+
 getTasks()
-tasksCollection()
+  .then(tasksCollection)
+  .then(TaskFormComponent)
+  .then(TaskListComponent)
+
 
 
 getUsers()

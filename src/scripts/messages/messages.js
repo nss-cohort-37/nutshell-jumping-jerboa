@@ -1,4 +1,5 @@
 import { getMessages, useMessages } from "./messagesProvider.js"
+import messageCard from "./messageCard.js";
 
 const contentTarget = document.querySelector(".message__list")
 const eventHub = document.querySelector(".container")
@@ -34,7 +35,7 @@ export const MessageComponent = () => {
         }
       
         eventHub.addEventListener("click", clickEvent => {
-          if (clickEvent.target.id.startsWith("editMessage--")) {debugger
+          if (clickEvent.target.id.startsWith("editMessage--")) {
             {
               formTarget.innerHTML = `
             
@@ -60,6 +61,9 @@ export const MessageComponent = () => {
       
         })
         
+        eventHub.addEventListener("editMessageClicked", event => {
+          renderMessagesAgain()
+        })
 
         eventHub.addEventListener("messageHasBeenEdited", event => {
           renderMessagesAgain()
@@ -74,24 +78,24 @@ export const MessageComponent = () => {
 
         const render = (theMessage) => {
 
-debugger
-          contentTarget.innerHTML = theMessage.map(
-            (messageObject) => {
-              return `
-            
-            <section class="message__card">
-            
-              <div> Message: ${messageObject.message}</div>
-              <button id="message--user${messageObject.id}"> ${messageObject.user.name}</button>
-              <button id="editMessage--${messageObject.id}">Edit</button>
+
+          contentTarget.innerHTML = 
+          
+          `
+          <input type="hidden" id="message-id" />
+          <input type="text" name="title" id="message">  
+            <button class='saveNews' id="saveMessage">Save Message</button> 
+
+          ${
+            theMessage.map(
+              (messageObject) =>  messageCard(messageObject)
               
               
-            
-            
-            </section>
-            
-            `
-            }).join("")
+              
+              ).join("")
+
+          }`
+          
 
         }
         render(theCurrentUsersMessages)

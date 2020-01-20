@@ -81,26 +81,31 @@ const EventsListComponent = () => {
                 })
 
 
-
-                const eventsCollection = useEvents()
-
-                const render = (eventsCollection) => {
-                    contentTarget.innerHTML = eventsCollection.map(
-                        (individualEvent) => {
-                            return `
-                                <section class="event">
+                    const eventsCollection = useEvents()
+                    
+                    const render = (eventsCollection) => {
+                        contentTarget.innerHTML = eventsCollection.map(
+                            (individualEvent) => {
+                                return `
+                                <section class="event__card">
                                 <div>${individualEvent.name}</div>
                                 <div>Location: ${individualEvent.location}</div>
                                 <div>Date of Event: ${individualEvent.date}</div>
                                 <button id="deleteEvent__${individualEvent.id}">Delete Event</button>
                                 <button id="editEvent__${individualEvent.id}">Edit Event</button>
-                                <section>                
+                                
+                                
+                                </section>                
                                 `
                         }
                     ).join("")
                 }
+                getEvents(currentUser).then(
+                    ()=> {
 
-                render(eventsCollection)
+                        render(eventsCollection)
+                    }
+                )
 
             })
     })

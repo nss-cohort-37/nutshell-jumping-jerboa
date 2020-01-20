@@ -20,3 +20,36 @@ body{
     padding: 10px;
 }
 
+/* .middle {
+    margin: 10px 20px 10px 20px;
+} */
+
+.news__container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid purple;
+
+}
+
+.events__container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid purple;
+    justify-content: center
+
+}
+
+.middle__container {
+    padding: 20px;
+}
+
+.task__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid purple;
+    overflow: scroll;
+    height: 210px;
+    justify-content: center;
+}
+
