@@ -78,7 +78,7 @@ const eventComponent = () => {
                     Date: <input type="text" id="event__date" />
                 </div>
 
-                <button class="event__field" id="saveEvent">New Event</button>
+                <button class="event__field" id="saveEvent">Save Event</button>
 
                 
         `
