@@ -100,8 +100,12 @@ const EventsListComponent = () => {
                         }
                     ).join("")
                 }
+                getEvents(currentUser).then(
+                    ()=> {
 
-                render(eventsCollection)
+                        render(eventsCollection)
+                    }
+                )
 
             })
     })

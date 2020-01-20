@@ -28,9 +28,54 @@
   "messages": [
     {
       "id": 1,
-      "message": "a;slkdfjas;d",
-      "userId": 7,
-      "friendId": 5
+      "message": "edited",
+      "userId": 5
+    },
+    {
+      "message": "dfasdfad",
+      "userId": 5,
+      "date": 1579550965606,
+      "id": 2
+    },
+    {
+      "message": "dfasdfad",
+      "userId": 5,
+      "date": 1579550967361,
+      "id": 3
+    },
+    {
+      "message": "hi",
+      "userId": 5,
+      "date": 1579550975427,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "message": "edit",
+      "userId": 5
+    },
+    {
+      "message": "hey",
+      "userId": 5,
+      "date": 1579551269003,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "message": "edited hey",
+      "userId": 5
+    },
+    {
+      "message": "asdfas",
+      "userId": 6,
+      "date": 1579551465708,
+      "id": 8
+    },
+    {
+      "message": "asdfas",
+      "userId": 6,
+      "date": 1579551465709,
+      "id": 9
     }
   ],
   "news": [
@@ -39,14 +84,6 @@
       "title": "hahah",
       "synopsis": "nahahj",
       "url": "hshshshsh"
-    },
-    {
-      "title": ";aldksf",
-      "synopsis": "asdfa",
-      "url": "asdfsd",
-      "userId": 5,
-      "date": 1579533485016,
-      "id": 2
     },
     {
       "title": "afsds",
@@ -63,6 +100,22 @@
       "userId": 5,
       "date": 1579533513507,
       "id": 4
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdf",
+      "url": "adf",
+      "userId": 5,
+      "date": 1579551248357,
+      "id": 5
+    },
+    {
+      "title": "hey",
+      "synopsis": "john news",
+      "url": "saldkf",
+      "userId": 6,
+      "date": 1579551488060,
+      "id": 6
     }
   ],
   "friends": [
@@ -70,43 +123,94 @@
       "friendId": 1,
       "userId": 5,
       "id": 1
+    }
+  ],
+  "tasks": [
+    {
+      "name": "john",
+      "location": "joh",
+      "date": "john",
+      "userId": 6,
+      "id": 6
     },
     {
-      "friendId": 5,
+      "name": "john 2",
+      "location": "john 2",
+      "date": "john 2",
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "name": "mac",
+      "location": "mac",
+      "date": "mac",
+      "userId": 6,
+      "id": 8
+    },
+    {
+      "name": "asdf",
+      "location": "adfa",
+      "date": "asdf",
+      "userId": 6,
+      "id": 9
+    }
+  ],
+  "events": [
+    {
+      "name": "dS",
+      "location": "ASDF",
+      "date": "ASDFA",
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "name": "ASDFASD",
+      "location": "ASDFA",
+      "date": "ASDFADS",
       "userId": 5,
       "id": 2
     },
     {
-      "friendId": 6,
+      "name": "asdf",
+      "location": "asdfa",
+      "date": "asdfas",
       "userId": 5,
       "id": 3
     },
     {
-      "friendId": 7,
+      "name": "dSDasd",
+      "location": "asdfad",
+      "date": "asdfads",
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "name": "asdfasd",
+      "location": "asdfasf",
+      "date": "asdfasdf",
+      "userId": 6,
+      "id": 5
+    },
+    {
+      "name": "MAc",
+      "location": "mac",
+      "date": "mac",
+      "userId": 6,
+      "id": 6
+    },
+    {
+      "name": "john",
+      "location": "john",
+      "date": "john",
       "userId": 5,
-      "id": 4
-    }
-  ],
-  "tasks": [],
-  "events": [
-    {
-      "id": 2,
-      "name": "lslslsl",
-      "location": "nnnnnn",
-      "date": "vcvcv"
+      "id": 7
     },
     {
-      "name": "test",
-      "location": "test",
-      "date": "test",
-      "id": 3
-    },
-    {
-      "name": "test2",
-      "location": "test2",
-      "date": "test2",
-      "id": 4
+      "name": "john",
+      "location": "john",
+      "date": "john",
+      "userId": 6,
+      "id": 8
     }
   ]
-
 }
