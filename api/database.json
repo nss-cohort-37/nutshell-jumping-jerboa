@@ -51,40 +51,9 @@
   ],
   "messages": [
     {
-      "Message": "hi amon",
-      "userId": 9,
-      "date": 1579491150583,
-      "id": 1
-    },
-    {
-      "Message": "hhhh NOW",
-      "userId": 9,
-      "date": 1579491178748,
-      "id": 2
-    },
-    {
-      "Message": "yo",
-      "userId": 8,
-      "date": 1579491304341,
-      "id": 3
-    },
-    {
-      "Message": "yo",
-      "userId": 8,
-      "date": 1579491307747,
-      "id": 4
-    },
-    {
-      "Message": "hi thania",
-      "userId": 8,
-      "date": 1579491862971,
-      "id": 5
-    },
-    {
-      "Message": "hi amon",
-      "userId": 9,
-      "date": 1579492089071,
-      "id": 6
+      "id": 1,
+      "message": "?",
+      "userId": 8
     }
   ],
   "news": [
@@ -93,100 +62,60 @@
       "title": "hahah",
       "synopsis": "nahahj",
       "url": "hshshshsh"
-    }
-  ],
-  "friends": [],
-  "tasks": [],
-  "events": [
-    {
-      "id": 2,
-      "name": "lslslsl",
-      "location": "nnnnnn",
-      "date": "vcvcv"
     },
     {
-      "id": 6,
-      "title": "edited",
-      "synopsis": "edited",
-      "url": "this is edited",
-      "userId": 5
-    },
-    {
-      "title": "",
-      "synopsis": "",
-      "url": "",
-      "userId": 8,
-      "date": 1579297004783,
-      "id": 9
-    },
-    {
-      "title": "mums",
-      "synopsis": "mum",
-      "url": "mum",
-      "userId": 8,
-      "date": 1579482639653,
-      "id": 10
-    },
-    {
-      "title": "hi",
-      "synopsis": "hi",
-      "url": "hi",
-      "userId": 8,
-      "date": 1579482670946,
-      "id": 11
-    },
-    {
-      "title": "now",
-      "synopsis": "now",
-      "url": "now",
-      "userId": 8,
-      "date": 1579482731010,
-      "id": 12
-    },
-    {
-      "title": "",
-      "synopsis": "",
-      "url": "",
+      "title": "blah",
+      "synopsis": "blah",
+      "url": "blah",
       "userId": 9,
-      "date": 1579490237100,
-      "id": 13
+      "date": 1579534692100,
+      "id": 2
     },
     {
-      "title": "hhhh",
-      "synopsis": "",
-      "url": "",
+      "title": "blah",
+      "synopsis": "blah",
+      "url": "blah",
       "userId": 9,
-      "date": 1579491126886,
-      "id": 14
-    },
-    {
-      "title": "loch",
-      "synopsis": "loch",
-      "url": "loch",
-      "userId": 10,
-      "date": 1579530269900,
-      "id": 15
-    },
-    {
-      "title": "loch",
-      "synopsis": "loch",
-      "url": "loch",
-      "userId": 10,
-      "date": 1579530279832,
-      "id": 16
+      "date": 1579534708157,
+      "id": 3
     }
   ],
   "friends": [
     {
-      "friendId": 8,
-      "userId": 9,
+      "friendId": 11,
+      "userId": null,
       "id": 1
     },
     {
-      "friendId": 8,
-      "userId": 10,
+      "friendId": 10,
+      "userId": 9,
       "id": 2
+    },
+    {
+      "friendId": 10,
+      "userId": null,
+      "id": 3
     }
   ],
-  "tasks": []
+  "tasks": [],
+  "events": [
+    {
+      "name": "yo",
+      "location": "somewhere",
+      "date": "1/14/20",
+      "id": 18
+    },
+    {
+      "name": "yo",
+      "location": "somewhere",
+      "date": "1/14/20",
+      "id": 19
+    },
+    {
+      "name": "yo",
+      "location": "somewhere",
+      "date": "1/14/20",
+      "id": 20
+    }
+  ]
 }

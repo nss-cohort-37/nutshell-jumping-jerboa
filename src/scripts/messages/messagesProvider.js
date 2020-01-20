@@ -3,7 +3,7 @@ let messages = [];
 export const useMessages = () => messages.slice();
 
 export const getMessages = () =>
-  fetch("http://localhost:8088/messages")
+  fetch("http://localhost:8088/messages?_expand=user")
     .then(res => res.json())
     .then(parsedMessages => (messages = parsedMessages));
 
