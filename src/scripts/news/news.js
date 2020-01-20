@@ -17,23 +17,23 @@ const formTarget = document.querySelector(".editForm__container")
 
 export const NewsComponent = () => {
 
-eventHub.addEventListener("userLoggedIn", event => {
+  eventHub.addEventListener("userLoggedIn", event => {
 
 
-  const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+    const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
 
 
-  getNews(currentUser).then(
-    ()=>{
-      
-      const theCurrentUsersNews = useNews()
+    getNews(currentUser).then(
+      () => {
 
-      const render = (theNews) => {
-        
+        const theCurrentUsersNews = useNews()
 
-      contentTarget.innerHTML = theNews.map(
-        (newsObject) => {
-          return `
+        const render = (theNews) => {
+
+
+          contentTarget.innerHTML = theNews.map(
+            (newsObject) => {
+              return `
             
             <section class="news__card">
             
@@ -47,38 +47,38 @@ eventHub.addEventListener("userLoggedIn", event => {
             </section>
             
             `
-        }).join("")
-        
-    }
+            }).join("")
 
-    render(theCurrentUsersNews)
+        }
 
-    eventHub.addEventListener("click", clickEvent => {
-      if (clickEvent.target.id.startsWith("deleteNews--")) {
-  
-        const [prefix, newsId] = clickEvent.target.id.split("--")
-  
-        deleteNews(newsId).then(
-          () => {
-            
-              
+        render(theCurrentUsersNews)
+
+        eventHub.addEventListener("click", clickEvent => {
+          if (clickEvent.target.id.startsWith("deleteNews--")) {
+
+            const [prefix, newsId] = clickEvent.target.id.split("--")
+
+            deleteNews(newsId).then(
+              () => {
+
+
                 const theNews = useNews()
                 renderNewsAgain(theNews)
 
-              
-            
-  
-  
-          })
-  
-      }
-  
-    })
-  
-    eventHub.addEventListener("click", clickEvent => {
-      if (clickEvent.target.id.startsWith("editNews--")) {
-        {
-          formTarget.innerHTML = `
+
+
+
+
+              })
+
+          }
+
+        })
+
+        eventHub.addEventListener("click", clickEvent => {
+          if (clickEvent.target.id.startsWith("editNews--")) {
+            {
+              formTarget.innerHTML = `
         
         
         <label for="newTitle">Title:</label>
@@ -96,57 +96,46 @@ eventHub.addEventListener("userLoggedIn", event => {
         <button class='saveNews' id="saveNews">Save News</button>
         
         `
-        }
-  
-        const [deletePrefix, newsId] = clickEvent.target.id.split("--")
-        const editNews = new CustomEvent("editButtonClicked", {
-          detail: {
-            newsId: newsId
-  
+            }
+
+            const [deletePrefix, newsId] = clickEvent.target.id.split("--")
+            const editNews = new CustomEvent("editButtonClicked", {
+              detail: {
+                newsId: newsId
+
+              }
+
+            })
+            eventHub.dispatchEvent(editNews)
           }
-  
+
         })
-        eventHub.dispatchEvent(editNews)
-      }
-  
-    })
-  
-  
-    const renderNewsAgain = () => {
-      getNews(currentUser).then(
-        () => {
 
-          const allTheNews = useNews()
-          render(allTheNews)
 
+        const renderNewsAgain = () => {
+          getNews(currentUser).then(
+            () => {
+
+              const allTheNews = useNews()
+              render(allTheNews)
+
+            }
+          )
         }
-      )
-    }
-  
-    eventHub.addEventListener("newsCreated", event => {
-      renderNewsAgain()
-  
-    })
-  
-    eventHub.addEventListener("newsHasBeenEdited", event => {
-      renderNewsAgain()
-    })
-  
+
+        eventHub.addEventListener("newsCreated", event => {
+          renderNewsAgain()
+
+        })
+
+        eventHub.addEventListener("newsHasBeenEdited", event => {
+          renderNewsAgain()
+        })
 
 
-
+      })
 
   })
 
-})
-
-
-
-
-
- 
-
   // console.log(NewsDated())
-
-
 }

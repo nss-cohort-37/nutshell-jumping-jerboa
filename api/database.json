@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "name": "Tyler",
-      "email": "t@t.com",
-      "password": "5",
-      "id": 1
-    },
-    {
       "name": "Mac Gibbons",
       "email": "macgibbons@gmail.com",
       "password": "12345",
@@ -25,97 +19,16 @@
       "id": 7
     },
     {
-      "name": "amon",
-      "email": "amonarnoth",
-      "password": "666",
+      "name": "Tyler",
+      "email": "Tyler",
+      "password": "1",
       "id": 8
-    },
-    {
-      "name": "thania",
-      "email": "thania",
-      "password": "thania",
-      "id": 9
-    },
-    {
-      "name": "loch",
-      "email": "loch",
-      "password": "loch",
-      "id": 10
-    },
-    {
-      "name": "thanos",
-      "email": "thanos",
-      "password": "thanos",
-      "id": 11
     }
   ],
-  "messages": [
-    {
-      "id": 1,
-      "message": "?",
-      "userId": 8
-    }
-  ],
-  "news": [
-    {
-      "id": 1,
-      "title": "hahah",
-      "synopsis": "nahahj",
-      "url": "hshshshsh"
-    },
-    {
-      "title": "blah",
-      "synopsis": "blah",
-      "url": "blah",
-      "userId": 9,
-      "date": 1579534692100,
-      "id": 2
-    },
-    {
-      "title": "blah",
-      "synopsis": "blah",
-      "url": "blah",
-      "userId": 9,
-      "date": 1579534708157,
-      "id": 3
-    }
-  ],
-  "friends": [
-    {
-      "friendId": 11,
-      "userId": null,
-      "id": 1
-    },
-    {
-      "friendId": 10,
-      "userId": 9,
-      "id": 2
-    },
-    {
-      "friendId": 10,
-      "userId": null,
-      "id": 3
-    }
-  ],
+  "messages": [],
+  "news": [],
+  "friends": [],
   "tasks": [],
-  "events": [
-    {
-      "name": "yo",
-      "location": "somewhere",
-      "date": "1/14/20",
-      "id": 18
-    },
-    {
-      "name": "yo",
-      "location": "somewhere",
-      "date": "1/14/20",
-      "id": 19
-    },
-    {
-      "name": "yo",
-      "location": "somewhere",
-      "date": "1/14/20",
-      "id": 20
-    }
-  ]
+  "events": []
+
 }
