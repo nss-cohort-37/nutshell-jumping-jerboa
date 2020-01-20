@@ -84,32 +84,37 @@ const TaskListComponent = () => {
             
              
              
+
+          const render = (tasksCollection) => {
+                   contentTarget.innerHTML = tasksCollection.map(
+                       (individualTask) => {
+                           return `
+                               <section id="task--${individualTask.id}" class="task__card">
+                                   <div>${individualTask.text}</div>
+                                   <button id="deleteTask--${individualTask.id}">Delete</button>
+                                   <button id="editTask--${individualTask.id}">Edit</button>
+                                   <button id="completeTask--${individualTask.id}">Complete</button>
+                               </section>
+                           `
+                       }
+                     
+                   ).join("")
+               }
+          
+         getTasks(currentUser).then( () => {
+
+           const tasks = useTasks()
+           render(tasks)
+
+         }
+           
+           )
+
+
+
+
             })
             
-            const render = (tasksCollection) => {
-                     contentTarget.innerHTML = tasksCollection.map(
-                         (individualTask) => {
-                             return `
-                                 <section id="task--${individualTask.id}" class="task__card">
-                                     <div>${individualTask.text}</div>
-                                     <button id="deleteTask--${individualTask.id}">Delete</button>
-                                     <button id="editTask--${individualTask.id}">Edit</button>
-                                     <button id="completeTask--${individualTask.id}">Complete</button>
-                                 </section>
-                             `
-                         }
-                       
-                     ).join("")
-                 }
-            
-           getTasks(currentUser).then( () => {
-
-             const tasks = useTasks()
-             render(tasks)
-
-           }
-             
-             )
                 
                    
                  }

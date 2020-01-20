@@ -38,7 +38,8 @@ export const MessageListComponent = () => {
       
         
         eventHub.addEventListener("click", clickEvent => {
-          if (clickEvent.target.id === "saveMessage") {debugger
+          
+          if (clickEvent.target.id === "saveMessage") {
            
             const hiddenInputValue = document.querySelector("#message-id").value
       
@@ -66,6 +67,8 @@ export const MessageListComponent = () => {
       
               saveMessages(newMessage).then(
                 () => {
+                  console.log("saving the message");
+                  
                   const message = new CustomEvent("messageCreated")
                   eventHub.dispatchEvent(message)
                 }
