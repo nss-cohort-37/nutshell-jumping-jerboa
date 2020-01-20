@@ -64,8 +64,8 @@ const TaskFormComponent = () => {
 
     const render = () => {
         contentTarget.innerHTML = `
-            <details>
-                <summary>Task</summary>
+            
+              
                 <input type="hidden" id="task-id" />
                 <div class="task__field">
                     Task: <input type="text" id="task-text" />
@@ -73,7 +73,7 @@ const TaskFormComponent = () => {
                 <button class="task__field" id="showTasks">Show Tasks</button>
                 <button class="task__field" id="saveTasks">Save Task</button>
                 
-            </details>
+          
         `
     }
 

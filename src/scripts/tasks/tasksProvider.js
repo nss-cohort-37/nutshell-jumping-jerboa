@@ -50,9 +50,9 @@ export const completeTask = (taskId) => {
   .then(getTasks)
 }
 
-export const getTasks = () => {
-    // Load database state into application state
-    return fetch("http://localhost:8088/tasks")
+export const getTasks = (user) => {
+
+    return fetch(`http://localhost:8088/tasks?userId=${user}`)
         .then(response => response.json())
         .then((taskArray) => {
             tasks = taskArray.slice()

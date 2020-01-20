@@ -4,11 +4,25 @@ const contentTarget = document.querySelector(".saved__tasks")
 const eventHub = document.querySelector(".container")
 
 const TaskListComponent = () => {
-  
-  eventHub.addEventListener("taskHasBeenEdited", event => {
-    const updatedTask = useTasks()
-        render(updatedTask)
-    })
+
+  eventHub.addEventListener("userLoggedIn", event => {
+
+    const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
+    
+    getTasks(currentUser).then(
+      () =>{
+
+
+
+
+        eventHub.addEventListener("taskHasBeenEdited", event => {
+          const updatedTask = useTasks()
+              render(updatedTask)
+          })
+
+        
+      }
+    )
     
     eventHub.addEventListener("click", clickEvent => {
         if (clickEvent.target.id.startsWith("editTask--")) {
@@ -22,7 +36,7 @@ const TaskListComponent = () => {
             
             eventHub.dispatchEvent(editEvent)
           }
-
+  
           if (clickEvent.target.id.startsWith("deleteTask--")) {
             const [deletePrefix, taskId] = clickEvent.target.id.split("--")
             
@@ -40,30 +54,46 @@ const TaskListComponent = () => {
         render(allTheTasks)
         
       }
-
-    eventHub.addEventListener("taskCreated", event => {
-      renderTasksAgain()
-    })
     
-     eventHub.addEventListener("showTaskButtonClicked", event => {
-           renderTasksAgain()
-       })
       
-   const render = (tasksCollection) => {
-            contentTarget.innerHTML = tasksCollection.map(
-                (individualTask) => {
-                    return `
-                        <section class="task">
-                            <div>${individualTask.text}</div>
-                            <button id="deleteTask--${individualTask.id}">Delete</button>
-                            <button id="editTask--${individualTask.id}">Edit</button>
-                        </section>
-                    `
-                }
+          eventHub.addEventListener("taskCreated", event => {
+            renderTasksAgain()
+          })
+          
+          
+           eventHub.addEventListener("showTaskButtonClicked", event => {
+                 renderTasksAgain()
+             })
+            
+             
+             
+            })
+            
+            const render = (tasksCollection) => {
+                     contentTarget.innerHTML = tasksCollection.map(
+                         (individualTask) => {
+                             return `
+                                 <section class="task">
+                                     <div>${individualTask.text}</div>
+                                     <button id="deleteTask--${individualTask.id}">Delete</button>
+                                     <button id="editTask--${individualTask.id}">Edit</button>
+                                     <button id="completeTask--"${individualTask.id}>Complete</button>
+                                 </section>
+                             `
+                         }
+                       
+                     ).join("")
+                 }
+            
+            // eventHub.addEventListener("click", clickEvent => {
               
-            ).join("")
-        }
-      
-    }
+              //    if (clickEvent.target.id.startsWith("completeTask--")) {
+                //      .classList.add("completedTask")
+                
+                //   }
+                // })
+                
+                   
+                 }
     
 export default TaskListComponent
