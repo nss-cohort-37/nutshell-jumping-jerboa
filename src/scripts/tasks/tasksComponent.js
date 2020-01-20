@@ -1,7 +1,7 @@
 import { saveTasks, getTasks, useTasks, editTask } from "./tasksProvider.js"
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".task__container")
+const contentTarget = document.querySelector(".save__task")
 
 
 const TaskFormComponent = () => {

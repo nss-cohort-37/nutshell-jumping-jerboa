@@ -39,6 +39,10 @@ body{
 
 }
 
+.middle__container {
+    padding: 20px;
+}
+
 .task__container {
     display: flex;
     flex-wrap: wrap;
