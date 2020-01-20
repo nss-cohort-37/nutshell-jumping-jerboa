@@ -6,6 +6,9 @@ import { getNews } from "./news/newsProvider.js";
 import { NewsListComponent } from "./news/newsList.js";
 import {NewsComponent} from "./news/news.js"
 import friendsList from "./friends/friendsList.js";
+import { getMessages } from "./messages/messagesProvider.js";
+import {MessageComponent} from "./messages/messages.js"
+import {MessageListComponent} from "./messages/messagesList.js"
 
 
 getUsers()
@@ -14,6 +17,9 @@ getUsers()
 getNews()
   .then(NewsListComponent)
   .then(NewsComponent)
+getMessages()
+  .then(MessageListComponent)
+  .then(MessageComponent)
  
 
     .then(friendsList)

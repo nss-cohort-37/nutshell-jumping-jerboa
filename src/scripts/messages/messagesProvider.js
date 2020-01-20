@@ -30,5 +30,5 @@ export const saveMessages = messages => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(messages)
-  }).then(getMessagess);
+  }).then(getMessages);
 };
