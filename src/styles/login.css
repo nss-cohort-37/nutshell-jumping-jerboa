@@ -4,9 +4,12 @@
 
 .account__container {
     display: flex;
+    border-radius: 4px;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid purple;
     padding: 50px;
+    margin-top: 100px;
+    width: 300px;
 }
 
 .register__card {
@@ -34,4 +37,14 @@ dialog {
 .nav__container {
     display: flex;
     justify-content: space-around;
+}
+
+.login__card{
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+.login__item {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

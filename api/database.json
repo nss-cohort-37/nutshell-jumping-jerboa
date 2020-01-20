@@ -1,28 +1,10 @@
 {
   "users": [
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "Tyler",
+      "email": "t@t.com",
+      "password": "5",
       "id": 1
-    },
-    {
-      "name": "Mac",
-      "email": "macgibbons@gmail.com",
-      "password": "12345",
-      "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 4
     },
     {
       "name": "Mac Gibbons",
@@ -31,99 +13,43 @@
       "id": 5
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "John Smith",
+      "email": "john@jsmith.com",
+      "password": "1",
       "id": 6
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "joe",
+      "email": "joe@joe.com",
+      "password": "joe",
       "id": 7
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 11
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "",
-      "password": "123",
-      "id": 12
-    },
-    {
-      "name": "mac",
-      "email": "",
-      "password": "123",
-      "id": 13
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "",
-      "password": "123",
-      "id": 14
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "123",
-      "id": 15
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "123",
-      "id": 16
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "123",
-      "id": 17
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "123",
-      "id": 18
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "123",
-      "id": 19
-    },
-    {
-      "name": "Mac Gibbons",
-      "email": "macgibbons@gmail.com",
-      "password": "12345",
-      "id": 20
     }
   ],
   "messages": [],
-  "news": [],
+  "news": [
+    {
+      "id": 1,
+      "title": "hahah",
+      "synopsis": "nahahj",
+      "url": "hshshshsh"
+    }
+  ],
   "friends": [],
+  "events": [
+    {
+      "id": 2,
+      "name": "lslslsl",
+      "location": "nnnnnn",
+      "date": "vcvcv"
+    },
+    {
+      "name": "hahah",
+      "location": "hahah",
+      "date": "hahah",
+      "id": 3
+    }
+  ],
+ 
   "tasks": [
     {
       "text": "aaaaaaa",

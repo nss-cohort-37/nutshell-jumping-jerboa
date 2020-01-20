@@ -1,13 +1,15 @@
 let news = [];
 
-export const useNews = () => news.slice();
+export const useNews = () => 
+  news.slice().sort((a, b) => b.date - a.date);
 
-export const getNews = () =>
-  fetch("http://localhost:8088/news")
+
+export const getNews = (user) => {
+  return fetch(`http://localhost:8088/news?userId=${user}`)
     .then(res => res.json())
-    .then(parsedNews => (news = parsedNews));
+    .then(parsedNews => (news = parsedNews));}
 
-export const editNews = newsObject => {
+export const editNews = (newsObject) => {
   return fetch(`http://localhost:8088/news/${newsObject.id}`, {
     method: "PUT",
     headers: {
@@ -17,7 +19,7 @@ export const editNews = newsObject => {
   }).then(getNews);
 };
 
-export const deleteNews = newsId => {
+export const deleteNews = (newsId) => {
   return fetch(`http://localhost:8088/news/${newsId}`, {
     method: "DELETE"
   }).then(getNews);

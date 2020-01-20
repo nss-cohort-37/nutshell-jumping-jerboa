@@ -4,7 +4,7 @@ import { useUsers } from "../users/usersProvider.js";
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".login__container")
 const eraseForm = document.getElementById("login__form")
-
+const loadPage = document.getElementById("content")
 
 const loginFormList = () => {
 
@@ -17,15 +17,22 @@ const loginFormList = () => {
             contentTarget.innerHTML =
 
             `
-        <section>
-                    <label for="username">email:</label>
-                    <input type="text" name="username" id="loginUsername__form">
-                    <label for="loginpassword">Password:</label>
-                    <input type="password" name="loginpassword" id="loginPassword__form">
-                    <div class="error"></div>
-                    <button id="login__button">Log In</button>
-        </section>
-    
+            <section class="login__card">
+            <div class="login__item" >
+            
+                <label for="username">email:</label>
+                <input  type="text" name="username" id="loginUsername__form">
+                
+            </div>
+            <div class="login__item">
+                <label  for="loginpassword">Password:</label>
+                <input  type="password" name="loginpassword" id="loginPassword__form">
+            
+            </div>
+                
+                <div class="error"></div>
+                <button id="login__button">Log In</button>
+            </section>
         `
         }
     })
@@ -53,6 +60,9 @@ const loginFormList = () => {
                         console.log(sessionStorage.getItem("activeUser"))
                         const eraseForm = document.getElementById("login__form")
                         eraseForm.classList.add("erase__form")
+                        loadPage.classList.remove("hide__content")
+                        const message = new CustomEvent("userLoggedIn")
+                        eventHub.dispatchEvent(message)
                         
                     }
                         catch {
