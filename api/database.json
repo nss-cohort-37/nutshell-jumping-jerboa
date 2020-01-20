@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "name": "Tyler",
-      "email": "t@t.com",
-      "password": "5",
-      "id": 1
-    },
-    {
       "name": "Mac Gibbons",
       "email": "macgibbons@gmail.com",
       "password": "12345",
@@ -23,31 +17,17 @@
       "email": "joe@joe.com",
       "password": "joe",
       "id": 7
+    },
+    {
+      "name": "Tyler",
+      "email": "Tyler",
+      "password": "1",
+      "id": 8
     }
   ],
   "messages": [],
-  "news": [
-    {
-      "id": 1,
-      "title": "hahah",
-      "synopsis": "nahahj",
-      "url": "hshshshsh"
-    }
-  ],
+  "news": [],
   "friends": [],
   "tasks": [],
-  "events": [
-    {
-      "id": 2,
-      "name": "lslslsl",
-      "location": "nnnnnn",
-      "date": "vcvcv"
-    },
-    {
-      "name": "hahah",
-      "location": "hahah",
-      "date": "hahah",
-      "id": 3
-    }
-  ]
+  "events": []
 }

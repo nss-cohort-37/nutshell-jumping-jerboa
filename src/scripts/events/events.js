@@ -2,9 +2,9 @@ import { saveEvents, useEvents, editEvents } from "./eventsProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".newEvents__container")
+const entryLog = document.querySelector(".newEvents__container")
 
-
-const eventComponent = () => {
+export const eventComponent = () => {
 
     
     eventHub.addEventListener("editButtonClicked", event => {
@@ -57,35 +57,33 @@ const eventComponent = () => {
                     }
                 )
             }
+            
+            document.querySelector(".newEvents__container").innerHTML = " ",
+            document.querySelector(".editEvents__container").innerHTML = " "
+
         }
     })
 
 
 
-    const render = () => {
-        contentTarget.innerHTML = `
+    eventHub.addEventListener("click", event => {
+        if (event.target.id === ("events__button")) {
+          entryLog.innerHTML = `
 
                 <input type="hidden" id="event__id" />
 
-                <div class="event__field">
-                    event: <input type="text" id="event__name" />
-                </div>
+                    Event: <input type="text" id="event__name" />
 
-                <div class="event__field">
                     Location: <input type="text" id="event__location" />
-                </div>
-                <div class="event__field">
+
                     Date: <input type="text" id="event__date" />
-                </div>
 
                 <button class="event__field" id="saveEvent">Save Event</button>
 
                 
         `
-    }
+        }
+    })
 
-    render()
+
 }
-
-
-export default eventComponent
