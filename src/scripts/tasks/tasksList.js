@@ -1,3 +1,5 @@
+//John working on tasks still. Mac got the userID thing working.
+
 import { getTasks, useTasks, deleteTask } from "./tasksProvider.js"
 
 const contentTarget = document.querySelector(".saved__tasks")
@@ -23,6 +25,17 @@ const TaskListComponent = () => {
         
       }
     )
+
+    eventHub.addEventListener("click", clickEvent => {
+      if (clickEvent.target.id.startsWith("completeTask--")) {
+        const [prefix, taskId] = clickEvent.target.id.split("--")
+        const tasks = useTasks()
+        const completedTask = tasks.find(task => task.id === parseInt(taskId, 10))
+        console.log(completedTask)
+        const element = document.getElementById(`task--${completedTask.id}`)
+        element.classList.add("completedTask")
+      }
+    })
     
     eventHub.addEventListener("click", clickEvent => {
         if (clickEvent.target.id.startsWith("editTask--")) {
@@ -50,8 +63,13 @@ const TaskListComponent = () => {
     })
     
     const renderTasksAgain = () => {
-        const allTheTasks = useTasks()
-        render(allTheTasks)
+        getTasks(currentUser).then(
+          () => {
+              const allTheTasks = useTasks()
+              render(allTheTasks)
+
+          }
+        )
         
       }
     
@@ -73,11 +91,11 @@ const TaskListComponent = () => {
                      contentTarget.innerHTML = tasksCollection.map(
                          (individualTask) => {
                              return `
-                                 <section class="task">
+                                 <section id="task--${individualTask.id}" class="task">
                                      <div>${individualTask.text}</div>
                                      <button id="deleteTask--${individualTask.id}">Delete</button>
                                      <button id="editTask--${individualTask.id}">Edit</button>
-                                     <button id="completeTask--"${individualTask.id}>Complete</button>
+                                     <button id="completeTask--${individualTask.id}">Complete</button>
                                  </section>
                              `
                          }
@@ -85,13 +103,7 @@ const TaskListComponent = () => {
                      ).join("")
                  }
             
-            // eventHub.addEventListener("click", clickEvent => {
-              
-              //    if (clickEvent.target.id.startsWith("completeTask--")) {
-                //      .classList.add("completedTask")
-                
-                //   }
-                // })
+           
                 
                    
                  }

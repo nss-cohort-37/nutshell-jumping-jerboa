@@ -23,6 +23,66 @@
       "email": "joe@joe.com",
       "password": "joe",
       "id": 7
+    },
+    {
+      "name": "John",
+      "email": "ggsmoustache@gmail.com",
+      "password": "password",
+      "id": 8
+    },
+    {
+      "name": "John",
+      "email": "ggsmoustache@gmail.com",
+      "password": "password",
+      "id": 9
+    },
+    {
+      "name": "John",
+      "email": "1234",
+      "password": "password",
+      "id": 10
+    },
+    {
+      "name": "John",
+      "email": "1234",
+      "password": "password",
+      "id": 11
+    },
+    {
+      "name": "John G",
+      "email": "2144",
+      "password": "password",
+      "id": 12
+    },
+    {
+      "name": "John G",
+      "email": "2144",
+      "password": "password",
+      "id": 13
+    },
+    {
+      "name": "test",
+      "email": "asdfdsa",
+      "password": "password",
+      "id": 14
+    },
+    {
+      "name": "test",
+      "email": "asdfdsa",
+      "password": "password",
+      "id": 15
+    },
+    {
+      "name": "test",
+      "email": "asdf",
+      "password": "password",
+      "id": 16
+    },
+    {
+      "name": "test",
+      "email": "asdf",
+      "password": "password",
+      "id": 17
     }
   ],
   "messages": [],
@@ -34,7 +94,13 @@
       "url": "hshshshsh"
     }
   ],
-  "friends": [],
+  "friends": [
+    {
+      "friendId": 1,
+      "userId": null,
+      "id": 1
+    }
+  ],
   "events": [
     {
       "id": 2,
@@ -49,7 +115,6 @@
       "id": 3
     }
   ],
- 
   "tasks": [
     {
       "text": "aaaaaaa",
@@ -62,6 +127,10 @@
     {
       "id": 5,
       "text": "asd"
+    },
+    {
+      "text": "asdfasdfafaa",
+      "id": 6
     }
   ]
 }

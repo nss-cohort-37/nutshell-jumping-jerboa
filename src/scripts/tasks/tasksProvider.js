@@ -1,4 +1,4 @@
-//John working on setting up the tasks 
+//Tyler made taskProvider, John updated it 
 
 
 let tasks = []
