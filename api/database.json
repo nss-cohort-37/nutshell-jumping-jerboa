@@ -94,12 +94,6 @@
   ],
   "news": [
     {
-      "id": 1,
-      "title": "hahah",
-      "synopsis": "nahahj",
-      "url": "hshshshsh"
-    },
-    {
       "title": "afsds",
       "synopsis": "asdfasd",
       "url": "asdfasd",
@@ -132,11 +126,27 @@
       "id": 6
     },
     {
+<<<<<<< HEAD
       "title": "mum",
       "synopsis": "",
       "url": "",
       "userId": 9,
       "date": 1579619470574,
+=======
+      "title": "News",
+      "synopsis": "today",
+      "url": "www.news.com",
+      "userId": 5,
+      "date": 1579625957561,
+      "id": 7
+    },
+    {
+      "title": "adf",
+      "synopsis": "adf",
+      "url": "adsf",
+      "userId": 5,
+      "date": 1579626012506,
+>>>>>>> e7a759a44b8af0b32a9a1d5f2bd1a711881bb393
       "id": 8
     }
   ],
@@ -283,20 +293,6 @@
   ],
   "events": [
     {
-      "name": "dS",
-      "location": "ASDF",
-      "date": "ASDFA",
-      "userId": 5,
-      "id": 1
-    },
-    {
-      "name": "ASDFASD",
-      "location": "ASDFA",
-      "date": "ASDFADS",
-      "userId": 5,
-      "id": 2
-    },
-    {
       "name": "asdf",
       "location": "asdfa",
       "date": "asdfas",
@@ -339,11 +335,19 @@
       "id": 8
     },
     {
+<<<<<<< HEAD
       "name": "f",
       "location": "",
       "date": "",
       "userId": 9,
       "id": 9
+=======
+      "name": "af",
+      "location": "ads",
+      "date": "fadsafa",
+      "userId": 5,
+      "id": 10
+>>>>>>> e7a759a44b8af0b32a9a1d5f2bd1a711881bb393
     }
   ]
 }

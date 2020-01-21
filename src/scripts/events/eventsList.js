@@ -1,4 +1,5 @@
 import { useEvents, deleteEvents, getEvents } from "./eventsProvider.js"
+import colorizeCurrentUserEvents from "./eventsComponent.js";
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".events__container")
@@ -11,13 +12,12 @@ const EventsListComponent = () => {
 
         // console.log("listing the events")
 
-        getEvents(currentUser).then(
-            () => {
+        
 
 
                 eventHub.addEventListener("eventHasBeenEdited", event => {
                     const updatedEvents = useEvents()
-                    render(updatedEvents)
+                   renderEventsAgain()
                 })
 
                 eventHub.addEventListener("click", clickEvent => {
@@ -61,7 +61,7 @@ const EventsListComponent = () => {
                 })
 
                 const renderEventsAgain = () => {
-                    getEvents(currentUser).then(
+                    getEvents().then(
                         () => {
 
                             const allTheEvents = useEvents()
@@ -87,12 +87,12 @@ const EventsListComponent = () => {
                         contentTarget.innerHTML = eventsCollection.map(
                             (individualEvent) => {
                                 return `
-                                <section class="event__card">
+                                <section class="event__card" id="eventsCard--${individualEvent.id}">
                                 <div>${individualEvent.name}</div>
                                 <div>Location: ${individualEvent.location}</div>
                                 <div>Date of Event: ${individualEvent.date}</div>
-                                <div class="edit" id="deleteEvent__${individualEvent.id}">Delete Event</div>
-                                <div class="edit" id="editEvent__${individualEvent.id}">Edit Event</div>
+                                <div class="edit" id="deleteEvent__${individualEvent.id}">delete</div>
+                                <div class="edit" id="editEvent__${individualEvent.id}">edit</div>
                                 
                                 
                                 </section>                
@@ -100,14 +100,12 @@ const EventsListComponent = () => {
                         }
                     ).join("")
                 }
-                getEvents(currentUser).then(
-                    ()=> {
+               
 
                         render(eventsCollection)
-                    }
-                )
-
-            })
+                        colorizeCurrentUserEvents()
+                 
+            
     })
 }
 

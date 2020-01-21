@@ -1,4 +1,5 @@
 import { useNews, editNews, saveNews, getNews } from "./newsProvider.js"
+import colorizeCurrentUserNews from "./newsComponent.js";
 
 
 const eventHub = document.querySelector(".container")
@@ -14,9 +15,6 @@ export const NewsListComponent = () => {
     const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
   
   
-    getNews(currentUser).then(
-      ()=>{
-
         eventHub.addEventListener("editButtonClicked", event => {
           const newsToBeEdited = event.detail.newsId
           const allNewsArray = useNews()
@@ -49,6 +47,7 @@ export const NewsListComponent = () => {
               }
             
             editNews(editedNews).then(() => {
+              colorizeCurrentUserNews()
               eventHub.dispatchEvent(new CustomEvent("newsHasBeenEdited"))
       
             })
@@ -64,6 +63,7 @@ export const NewsListComponent = () => {
       
               saveNews(newNews).then(
                 () => {
+                  colorizeCurrentUserNews()
                   const message = new CustomEvent("newsCreated")
                   eventHub.dispatchEvent(message)
                 }
@@ -81,16 +81,16 @@ export const NewsListComponent = () => {
             entryLog.innerHTML = `
             
             
-            <label for="newTitle">Title:</label>
+            <label for="newTitle"></label>
             
             <input type="hidden" id="news-id" />
-            <input type="text" name="title" id="news-title">
+            <input type="text" name="title" id="news-title" placeholder="Title...">
         
-            <label for="newsSynopsis">Synopsis:</label>
-            <input type="text" name="Synopsis" id="news-synopsis">
+            <label for="newsSynopsis"></label>
+            <input type="text" name="Synopsis" id="news-synopsis" placeholder="Synopsis...">
       
-            <label for="newsUrl">Url:</label>
-            <input type="text" name="url" id="news-url">
+            <label for="newsUrl"></label>
+            <input type="text" name="url" id="news-url" placeholder="URL">
             
             
             <button class='saveNews' id="saveNews">Save News</button>
@@ -102,10 +102,6 @@ export const NewsListComponent = () => {
       
       
       
-
-
-      }
-      )
     }
       )
         
