@@ -51,7 +51,7 @@ const TaskListComponent = () => {
             eventHub.dispatchEvent(editEvent)
           }
   
-          if (clickEvent.target.id.startsWith("deleteTask--")) {
+          if (clickEvent.target.id.startsWith("deleteTask--")) {debugger
             const [deletePrefix, taskId] = clickEvent.target.id.split("--")
             
             deleteTask(taskId).then(

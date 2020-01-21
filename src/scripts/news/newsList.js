@@ -35,7 +35,7 @@ export const NewsListComponent = () => {
       
         
         eventHub.addEventListener("click", clickEvent => {
-          if (clickEvent.target.id === "saveNews") {
+          if (clickEvent.target.id === "saveNews") {debugger
            
             const hiddenInputValue = document.querySelector("#news-id").value
       

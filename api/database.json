@@ -23,148 +23,73 @@
       "email": "Tyler",
       "password": "1",
       "id": 8
+    },
+    {
+      "name": "loch",
+      "email": "loch",
+      "password": "loch",
+      "id": 9
+    },
+    {
+      "name": "thania",
+      "email": "thania",
+      "password": "thania",
+      "id": 10
+    },
+    {
+      "name": "thanos",
+      "email": "thanos",
+      "password": "thanos",
+      "id": 11
+    },
+    {
+      "name": "amon",
+      "email": "amon",
+      "password": "amon",
+      "id": 12
+    },
+    {
+      "name": "test",
+      "email": "test",
+      "password": "test",
+      "id": 13
     }
   ],
   "messages": [
     {
       "id": 1,
-      "message": "edited",
-      "userId": 5
+      "message": "mo",
+      "userId": 9
     },
     {
-      "id": 2,
-      "message": "dfasdfad",
-      "userId": 5
+      "message": "hi",
+      "userId": 9,
+      "date": 1579576145243,
+      "id": 2
     },
     {
-      "message": "dfasdfad",
-      "userId": 5,
-      "date": 1579550967361,
+      "message": "yo",
+      "userId": 9,
+      "date": 1579576922285,
       "id": 3
     },
     {
-      "message": "hi",
-      "userId": 5,
-      "date": 1579550975427,
+      "message": "3",
+      "userId": 9,
+      "date": 1579577254643,
       "id": 4
     },
     {
-      "id": 5,
-      "message": "edit",
-      "userId": 5
+      "message": "yo",
+      "userId": 10,
+      "date": 1579616153723,
+      "id": 5
     },
     {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579551269003,
+      "message": "yo",
+      "userId": 10,
+      "date": 1579616157817,
       "id": 6
-    },
-    {
-      "id": 7,
-      "message": "edited hey",
-      "userId": 5
-    },
-    {
-      "message": "asdfas",
-      "userId": 6,
-      "date": 1579551465708,
-      "id": 8
-    },
-    {
-      "message": "asdfas",
-      "userId": 6,
-      "date": 1579551465709,
-      "id": 9
-    },
-    {
-      "message": "double test",
-      "userId": 5,
-      "date": 1579553956839,
-      "id": 10
-    },
-    {
-      "message": "double test",
-      "userId": 5,
-      "date": 1579553957813,
-      "id": 11
-    },
-    {
-      "message": "double ",
-      "userId": 5,
-      "date": 1579554114977,
-      "id": 12
-    },
-    {
-      "message": "hey test",
-      "userId": 5,
-      "date": 1579554128331,
-      "id": 13
-    },
-    {
-      "message": "hey test",
-      "userId": 5,
-      "date": 1579554128333,
-      "id": 14
-    },
-    {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579554287764,
-      "id": 15
-    },
-    {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579554287765,
-      "id": 16
-    },
-    {
-      "message": "hi",
-      "userId": 5,
-      "date": 1579554374400,
-      "id": 17
-    },
-    {
-      "message": "this will save twice",
-      "userId": 5,
-      "date": 1579554475104,
-      "id": 18
-    },
-    {
-      "message": "this will save twice",
-      "userId": 5,
-      "date": 1579554508005,
-      "id": 19
-    },
-    {
-      "message": "test ",
-      "userId": 5,
-      "date": 1579554797532,
-      "id": 20
-    },
-    {
-      "message": "DOODOO",
-      "userId": 5,
-      "date": 1579554826681,
-      "id": 21
-    },
-    {
-      "message": "there",
-      "userId": 5,
-      "date": 1579554931565,
-      "id": 22
-    },
-    {
-      "message": "there",
-      "userId": 5,
-      "date": 1579554931567,
-      "id": 23
-    },
-    {
-      "message": "test",
-      "userId": 5,
-      "date": 1579555611597,
-      "id": 24
     }
   ],
   "news": [
@@ -205,13 +130,31 @@
       "userId": 6,
       "date": 1579551488060,
       "id": 6
+    },
+    {
+      "title": "mum",
+      "synopsis": "",
+      "url": "",
+      "userId": 9,
+      "date": 1579619470574,
+      "id": 8
     }
   ],
   "friends": [
     {
-      "friendId": 1,
-      "userId": 5,
+      "friendId": 5,
+      "userId": 10,
       "id": 1
+    },
+    {
+      "friendId": 5,
+      "userId": 9,
+      "id": 2
+    },
+    {
+      "friendId": 5,
+      "userId": null,
+      "id": 3
     }
   ],
   "tasks": [
@@ -246,6 +189,91 @@
       "text": "hey",
       "userId": 5,
       "id": 7
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 8
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 9
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 10
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 11
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 12
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 13
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 14
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 15
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 16
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 17
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 18
+    },
+    {
+      "text": "something",
+      "userId": 10,
+      "id": 19
+    },
+    {
+      "text": "r",
+      "userId": 9,
+      "id": 21
+    },
+    {
+      "text": "r",
+      "userId": 9,
+      "id": 22
+    },
+    {
+      "text": "",
+      "userId": 9,
+      "id": 23
+    },
+    {
+      "text": "",
+      "userId": 9,
+      "id": 24
+    },
+    {
+      "text": "",
+      "userId": 9,
+      "id": 25
     }
   ],
   "events": [
@@ -304,6 +332,20 @@
       "date": "john",
       "userId": 6,
       "id": 8
+    },
+    {
+      "name": "f",
+      "location": "",
+      "date": "",
+      "userId": 9,
+      "id": 9
+    },
+    {
+      "name": "",
+      "location": "",
+      "date": "",
+      "userId": 9,
+      "id": 10
     }
   ]
 }

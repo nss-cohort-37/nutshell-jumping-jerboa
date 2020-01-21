@@ -1,4 +1,4 @@
-import { getMessages, useMessages } from "./messagesProvider.js"
+import {saveMessages, getMessages, useMessages } from "./messagesProvider.js"
 import messageCard from "./messageCard.js";
 
 const contentTarget = document.querySelector(".message__list")
@@ -33,20 +33,40 @@ export const MessageComponent = () => {
             }
           )
         }
+
+        eventHub.addEventListener("click", event => { 
+          if(event.target.id.startsWith("message--")){
+            console.log("do you hear me")
+              
+              const [deletePrefix, messageId] = event.target.id.split("--")
+              const friendConfirmation = {
+                  messageId: parseInt(messageId, 10),
+                  userId: currentUser
+              }
+           
+                       const friendConfirmEvent = new CustomEvent("userAddedButtonClicked", {
+                           detail: {
+                               messageId: parseInt(messageId, 10),
+                               userId: currentUser
+                           }
+                       })
+                  
+                      eventHub.dispatchEvent(friendConfirmEvent)
+                      saveMessages(friendConfirmation)
+  
+              
+          }
+      })
+  
+      
+      
+
+       
+
       
         eventHub.addEventListener("click", clickEvent => {
-          if (clickEvent.target.id.startsWith("editMessage--")) {
-            {
-              formTarget.innerHTML = `
-            
-          
-            <input type="hidden" id="message-id" />
-            <input type="text" name="title" id="message">
-        
-            <button class='saveNews' id="saveMessage">Save Message</button>
-            
-            `
-            }
+          if (clickEvent.target.id.startsWith("editMessage--")) {debugger
+           
       
             const [deletePrefix, messageId] = clickEvent.target.id.split("--")
             const editMessage = new CustomEvent("editMessageClicked", {
@@ -61,9 +81,7 @@ export const MessageComponent = () => {
       
         })
         
-        eventHub.addEventListener("editMessageClicked", event => {
-          renderMessagesAgain()
-        })
+       
 
         eventHub.addEventListener("messageHasBeenEdited", event => {
           renderMessagesAgain()
