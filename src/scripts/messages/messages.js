@@ -81,12 +81,17 @@ export const MessageComponent = () => {
           
           `
           <div class="search">
-          <div class="input-group-append">
-          <input type="hidden" id="message-id" />
-          <input type="text" name="title" id="message">  
-            <button class="btn btn-outline-primary btn-lg saveMessage--button" id="saveMessage">Save Message</button> 
-        </div>
-        </div>
+
+            <input type="hidden" id="message-id" />
+            <input type="text" name="title" id="message" placeholder="sprinkle a message">  
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary btn-lg saveMessage--button" id="saveMessage">Save Message</button> 
+            </div>
+          </div>
+          
+
+
+        
 
           ${
             theMessage.map(
