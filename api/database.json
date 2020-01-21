@@ -23,6 +23,12 @@
       "email": "Tyler",
       "password": "1",
       "id": 8
+    },
+    {
+      "name": "james",
+      "email": "1",
+      "password": "1",
+      "id": 9
     }
   ],
   "messages": [
@@ -212,40 +218,85 @@
       "friendId": 1,
       "userId": 5,
       "id": 1
-    }
-  ],
-  "tasks": [
-    {
-      "text": "edited",
-      "id": 1
     },
     {
-      "text": "hey",
+      "friendId": 6,
+      "userId": 5,
       "id": 2
     },
     {
-      "text": "edited",
+      "friendId": 6,
+      "userId": 5,
       "id": 3
     },
     {
-      "text": "",
+      "friendId": 6,
       "userId": 5,
       "id": 4
     },
     {
-      "text": "asdfasf",
+      "friendId": 6,
       "userId": 5,
       "id": 5
     },
     {
-      "text": "asdfasd",
+      "friendId": 5,
       "userId": 5,
       "id": 6
     },
     {
-      "text": "hey",
+      "friendId": 6,
       "userId": 5,
       "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "text": "Take out the Garbage",
+      "id": 1
+    },
+    {
+      "text": "do the dishes",
+      "id": 2
+    },
+    {
+      "text": "feed the cat",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "text": "feed the dog",
+      "userId": 5
+    },
+    {
+      "text": "take out the garbage.",
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "text": "wash my pony",
+      "userId": 5
+    },
+    {
+      "text": "take notes",
+      "userId": 5,
+      "id": 7
+    },
+    {
+      "text": "edited",
+      "userId": 5,
+      "id": 8
+    },
+    {
+      "text": "edited",
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "text": "new task",
+      "userId": 5,
+      "id": 10
     }
   ],
   "events": [

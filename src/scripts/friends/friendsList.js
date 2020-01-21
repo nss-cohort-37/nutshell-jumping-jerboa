@@ -24,8 +24,7 @@ const friendsList = () => {
         <div class="search">
         <div>search users:</div>
         <input type="text" id="friend__searchBox">
-        <button id="reset__friendSearch">reset search</button>
-        <button id="show__userFriends">show my friends</button>
+        <button class="btn btn-outline-primary btn-lg" id="reset__friendSearch">reset search</button>
         </div>
         ${users.map(
             user => Friend(user)
@@ -83,7 +82,9 @@ const friendsList = () => {
                 friendId: parseInt(friendId, 10),
                 userId: currentUser
             }
-         
+         const nameofFriend = users.find(user => user.id === parseInt(friendId, 10))
+         console.log(nameofFriend.name)
+         confirm(`Would you like to add ${nameofFriend.name} as a friend?`)
                      const friendAddedEvent = new CustomEvent("friendAddedButtonClicked", {
                          detail: {
                              friendId: parseInt(friendId, 10),

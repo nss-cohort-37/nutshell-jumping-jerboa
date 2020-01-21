@@ -5,12 +5,31 @@ button {
     border: none;
     color: white;
     padding: 10px;
-    font-size: 15pt;
+    font-size: 10pt;
 }
 .btn {
-    background-color: purple !important
+    outline-color: purple !important
+
 }
 button:hover {
-    background-color: magenta;
+    
     cursor: pointer;
+}
+
+.edit {
+    color: gray;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 11px;
+    text-transform: lowercase
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: blue
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
 }

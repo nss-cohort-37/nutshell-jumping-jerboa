@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/main.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Nutshell</title>
 </head>
 
 <body>
-    <article class="container">
-        <header class="nav nav-pills nav-fill" class="nav__container">
-          <button class="nav-item" id="login__link">Log In</button>
-          <button id="register__link" class="nav-item">Create Account</button>
+    <article class="container container-xl">
+        <header class="navbar navbar-expand-lg navbar-light bg-light" class="nav__container">
+          <button class="nav-item btn" id="login__link">Log In</button>
+          <button id="register__link" class="nav-item btn">Create Account</button>
         </header>
 
 
@@ -31,18 +31,19 @@
           <div class ="save__task"></div>
 
           <div>
-            <button id="events__button">New Event</button>
+            <button class="btn btn-outline-primary" id="events__button">add Event</button>
+            <div class="newEvents__container"></div>
+            <div class="editEvents__container"></div>
           </div>
-
           <div class="middle events__container"></div>
-          <div class="newEvents__container"></div>
-          <div class="editEvents__container"></div>
+
           <div>
-            <button id="news__button">New Article</button>
-          </div>
-          <div class="middle news__container"></div>
-          <div class="newsForm__container"></div>
-          <div class="editForm__container"></div>
+            <button class="btn btn-outline-primary" id="news__button">add Article</button>
+            <div class="newsForm__container"></div>
+            <div class="editForm__container"></div>
+        <div class="middle news__container"></div>
+            
+        </div>
           
         </section>
           <aside class="messages__container"></aside>

@@ -66,7 +66,7 @@ const TaskFormComponent = () => {
               
                 <input type="hidden" id="task-id" />
                 <div class="task__field">
-                    Task: <input type="text" id="task-text" />
+                    new task: <input type="text" id="task-text" />
                 </div>
                 <button class="task__field" id="saveTasks">Save Task</button>
                 

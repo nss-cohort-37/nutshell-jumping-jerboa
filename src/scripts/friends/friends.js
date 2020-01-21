@@ -1,9 +1,8 @@
 const Friend = (friend) => {
     return `
-    <section class="friend__card">
+    <section class="card friend__card">
         <div class="friend__name">${friend.name}</div>
-        <button id="friendAdd--${friend.id}">add friend</button>
-        <button id="message__friend--${friend.id}">message</button>
+        <button class="btn btn-outline-primary btn-sm" id="friendAdd--${friend.id}">add friend</button>
     </section>
     `
 
