@@ -1,3 +1,5 @@
+// tyler - to perform all the fetch calls for event objects
+
 let events = [];
 
 export const useEvents = () => events.slice();

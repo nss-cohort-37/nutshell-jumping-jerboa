@@ -1,3 +1,5 @@
+// tyler - to render the events on the page when a user logs in and when new events are created, edited, deleted
+
 import { useEvents, deleteEvents, getEvents } from "./eventsProvider.js"
 import colorizeCurrentUserEvents from "./eventsComponent.js";
 

@@ -1,3 +1,6 @@
+// mac - to render the login form on click and to set the session storage for the user that logs in
+// also to prevent logging in of an unregistered user
+
 import { useUsers } from "../users/usersProvider.js";
 
 

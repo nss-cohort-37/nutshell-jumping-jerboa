@@ -1,3 +1,5 @@
+// mac - to redner the friend search and initiate its functionality as well as rendering the list of friends
+
 import { useUsers } from "../users/usersProvider.js";
 import Friend from "./friends.js";
 import { saveFriends } from "./friendsProvider.js";
@@ -25,7 +27,7 @@ const friendsList = () => {
         
         <input type="text" id="friend__searchBox" placeholder="search friends...">
         <div class="input-group-append">
-        <button class="btn btn-outline-primary btn-lg" id="reset__friendSearch">reset search</button>
+        <button class="search__button btn btn-outline-primary btn-lg" id="reset__friendSearch">reset search</button>
         </div
         </div>
         ${users.map(

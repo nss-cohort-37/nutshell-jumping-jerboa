@@ -1,3 +1,5 @@
+// mac - to map through the events and apply specific styling to the events created by the current user
+
 import { useEvents } from "./eventsProvider.js";
 
 const colorizeCurrentUserEvents = () => {

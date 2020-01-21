@@ -1,3 +1,5 @@
+// mac - to map through the news and apply specific styling to the events created by the current user
+
 import { useNews } from "./newsProvider.js";
 
 const colorizeCurrentUserNews = () => {

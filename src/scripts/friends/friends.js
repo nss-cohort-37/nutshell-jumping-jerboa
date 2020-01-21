@@ -1,3 +1,5 @@
+// mac - to build the HTML for a friend component
+
 const Friend = (friend) => {
     return `
     <section class="card friend__card">
