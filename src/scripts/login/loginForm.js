@@ -17,21 +17,21 @@ const loginFormList = () => {
             contentTarget.innerHTML =
 
             `
-            <section class="login__card">
-            <div class="login__item" >
+            <section class="card login__card">
+            <div class="form-group">
             
-                <label for="username">email:</label>
+                <label for="username">email: </label>
                 <input  type="text" name="username" id="loginUsername__form">
                 
             </div>
-            <div class="login__item">
+            <div class="form-group">
                 <label  for="loginpassword">Password:</label>
                 <input  type="password" name="loginpassword" id="loginPassword__form">
             
             </div>
                 
                 <div class="error"></div>
-                <button id="login__button">Log In</button>
+                <button class="btn btn-outline-primary btn-lg" id="login__button">Log In</button>
             </section>
         `
         }

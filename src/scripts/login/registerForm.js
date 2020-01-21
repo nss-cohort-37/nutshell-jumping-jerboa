@@ -13,31 +13,31 @@ const registerFormList = () => {
           eraseForm.classList.remove("erase__form")
           contentTarget.innerHTML = 
           `
-          <section>
             <section class="register__card">
 
-            <div class="formLabel">
+            <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" name="name" id="registerName__form">
             </div>
 
-            <div class="formLabel">
+            <div class="form-group">
               <label for="username">email:</label>
               <input type="text" name="username" id="registerUsername__form">
             </div>
 
-            <div class="formLabel">
+            <div class="form-group">
               <label for="password">Password:</label>
               <input type="password" name="password" id="registerPassword__form">
             </div>
+            <div class="form-group">
 
-            </section>
+            
             
               <label for="password__confirm">Confirm Password:</label>
               <input type="password" name="confrimPassword" id="registerConfrimPassword__form">
-        
+        </div>
             <div class="error"></div>
-            <button id="createAccount__button">Create Account</button>
+            <button class="btn btn-outline-primary btn-lg" id="createAccount__button">Create Account</button>
           </section>
       
           `

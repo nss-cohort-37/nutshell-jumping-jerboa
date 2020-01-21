@@ -3,7 +3,7 @@
 const messageCard = (messageObject) => {
     return `
     
-    <section class="message__card">
+    <section class="card message__card">
             
               <div> ${messageObject.message}</div>
               <button id="message--user${messageObject.user.name}"> ${messageObject.user.name}</button>
