@@ -3,9 +3,9 @@
 const messageCard = (messageObject) => {
     return `
     
-    <section class="message__card">
+    <section class="card message__card">
             
-            <div class="messageName" id="message--user${messageObject.id}"> ${messageObject.user.name} </div>
+            <div class="messageName" id="messageUser--${messageObject.userId}"> ${messageObject.user.name} </div>
               <div> -"${messageObject.message}"</div>
               <div class="edit" id="editMessage--${messageObject.id}">edit</div>
             </section>

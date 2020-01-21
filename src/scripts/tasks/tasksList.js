@@ -57,7 +57,7 @@ const TaskListComponent = () => {
             deleteTask(taskId).then(
               () => {
                     const theNewTasks = useTasks()
-                    render(theNewTasks)
+                    renderTasksAgain(theNewTasks)
                 }
                 )
         }
@@ -89,9 +89,9 @@ const TaskListComponent = () => {
                    contentTarget.innerHTML = tasksCollection.map(
                        (individualTask) => {
                            return `
-                               <section id="task--${individualTask.id}" class="task__card">
-                                   <div>${individualTask.text}</div>
-                                   <button id="completeTask--${individualTask.id}">Complete</button>
+                               <section id="task--${individualTask.id}" class="card task__card">
+                                   <h4 class="card-title">${individualTask.text}</h4>
+                                   <button class="btn btn-outline-primary btn-sm" id="completeTask--${individualTask.id}">Complete</button>
                                    <div class="card__buttons">
                                     <div class="edit" id="deleteTask--${individualTask.id}">Delete</div>
                                     <div class="edit" id="editTask--${individualTask.id}">edit</div>

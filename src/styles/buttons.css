@@ -5,13 +5,14 @@ button {
     border: none;
     color: white;
     padding: 10px;
-    font-size: 15pt;
+    font-size: 10pt;
 }
 .btn {
-    background-color: purple !important
+    outline-color: purple !important
+
 }
 button:hover {
-    background-color: magenta;
+    
     cursor: pointer;
 }
 
@@ -30,4 +31,5 @@ button:hover {
 
 .card__buttons {
     display: flex;
+    justify-content: space-between;
 }

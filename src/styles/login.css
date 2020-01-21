@@ -6,10 +6,10 @@
     display: flex;
     border-radius: 4px;
     justify-content: center;
-    border: 2px solid purple;
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.75);
     padding: 50px;
     margin-top: 100px;
-    width: 300px;
+    width: 350px;
 }
 
 .register__card {
