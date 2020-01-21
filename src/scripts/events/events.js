@@ -1,3 +1,5 @@
+// tyler - to render the events form and to run thte fuctionality of it.
+
 import { saveEvents, useEvents, editEvents } from "./eventsProvider.js"
 
 const eventHub = document.querySelector(".container")
@@ -88,7 +90,7 @@ export const eventComponent = () => {
                 </div>
 
                 <div class="input-group-append">
-                <button class="btn btn-outline-primary" id="saveEvent">Save Event</button>
+                <button class="btn btn-outline-primary" id="saveEvent">Save</button>
                 </div>
     
             </div>

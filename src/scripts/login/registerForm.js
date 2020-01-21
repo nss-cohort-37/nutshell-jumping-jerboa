@@ -1,3 +1,6 @@
+// mac - to render the register new user form on click and to set the session storage for the user that logs in
+// also to prevent registration of an exsisting user
+
 import { saveUsers, getUser, getUsers, useUsers } from "../users/usersProvider.js";
 
 // const resetTarget = document.querySelector(".account__container")

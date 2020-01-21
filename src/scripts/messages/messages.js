@@ -84,7 +84,7 @@ export const MessageComponent = () => {
 
             <input type="hidden" id="message-id" />
             <input type="text" name="title" id="message" placeholder="sprinkle a message">  
-            <div class="input-group-append">
+            <div class="search__button input-group-append">
               <button class="btn btn-outline-primary btn-lg saveMessage--button" id="saveMessage">Save Message</button> 
             </div>
           </div>

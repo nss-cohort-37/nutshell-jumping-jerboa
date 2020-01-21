@@ -83,6 +83,7 @@ export const NewsListComponent = () => {
             <div class="input-group mb-3">
               <label for="newTitle"></label>
               
+              
               <input type="hidden" id="news-id" />
               <input type="text" name="title" id="news-title" placeholder="Title...">
               
@@ -92,6 +93,7 @@ export const NewsListComponent = () => {
                 <label for="newsUrl"></label>
                 <input type="text" name="url" id="news-url" placeholder="URL">
               
+
                 <div class="input-group-append">
                 <button class="btn btn-outline-primary" id="saveNews">save</button>
                 </div>

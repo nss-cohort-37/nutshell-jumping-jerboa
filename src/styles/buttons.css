@@ -45,3 +45,8 @@ button:hover {
     color: #01BC3F !important;
     border-color: white !important;   
   }
+
+  .search__button {
+      margin-top: 10px;
+  }
+  
