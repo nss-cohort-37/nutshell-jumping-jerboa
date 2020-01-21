@@ -155,6 +155,11 @@
       "friendId": 5,
       "userId": null,
       "id": 3
+    },
+    {
+      "friendId": 6,
+      "userId": 9,
+      "id": 4
     }
   ],
   "tasks": [
@@ -251,29 +256,29 @@
       "id": 19
     },
     {
-      "text": "r",
-      "userId": 9,
-      "id": 21
-    },
-    {
-      "text": "r",
-      "userId": 9,
-      "id": 22
-    },
-    {
-      "text": "",
-      "userId": 9,
-      "id": 23
-    },
-    {
-      "text": "",
-      "userId": 9,
-      "id": 24
+      "id": 22,
+      "text": "blah",
+      "userId": 9
     },
     {
       "text": "",
       "userId": 9,
       "id": 25
+    },
+    {
+      "text": "something",
+      "userId": 9,
+      "id": 26
+    },
+    {
+      "text": "something",
+      "userId": 9,
+      "id": 27
+    },
+    {
+      "text": "me",
+      "userId": 9,
+      "id": 28
     }
   ],
   "events": [
@@ -339,13 +344,6 @@
       "date": "",
       "userId": 9,
       "id": 9
-    },
-    {
-      "name": "",
-      "location": "",
-      "date": "",
-      "userId": 9,
-      "id": 10
     }
   ]
 }

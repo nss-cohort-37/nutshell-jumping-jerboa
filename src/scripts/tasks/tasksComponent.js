@@ -23,7 +23,7 @@ const TaskFormComponent = () => {
 
     
     eventHub.addEventListener("click", clickEvent => {
-        if (clickEvent.target.id === "saveTasks") {
+        if (clickEvent.target.id === "saveTasks") { 
             
             const hiddenInputValue = document.querySelector("#task-id").value
 

@@ -5,7 +5,7 @@ export const useNews = () =>
 
 
 export const getNews = (user) => {
-  return fetch(`http://localhost:8088/news?userId=${user}`)
+  return fetch(`http://localhost:8088/news?userId=`)
     .then(res => res.json())
     .then(parsedNews => (news = parsedNews));}
 

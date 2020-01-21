@@ -66,14 +66,12 @@ export const MessageComponent = () => {
 
       
         eventHub.addEventListener("click", clickEvent => {
-<<<<<<< HEAD
+          
           if (clickEvent.target.id.startsWith("editMessage--")) {debugger
-           
+           if(currentUser !== messageId) {
+             document.getElementById(`message--user${messageObject.messageId}`)= disable = true
+           }
       
-=======
-          if (clickEvent.target.id.startsWith("editMessage--")) {
-           
->>>>>>> 21584983dfe60f59e5f1986a64c263817a8d9cda
             const [deletePrefix, messageId] = clickEvent.target.id.split("--")
             
             const editMessage = new CustomEvent("editMessageClicked", {
@@ -88,20 +86,7 @@ export const MessageComponent = () => {
       
         })
         
-<<<<<<< HEAD
        
-=======
-       eventHub.addEventListener("click",  clickEvent => {
-         if(clickEvent.target.id.startsWith("messageUser--")) {
-          const users = useUsers()
-          const [deletePrefix, messageUserId] = clickEvent.target.id.split("--")
-          const nameofFriend = users.find(user => user.id === parseInt(messageUserId, 10))
-          console.log(nameofFriend.name)
-          confirm(`Would you like to add ${nameofFriend.name} as a friend?`)
-         }
-       }
-       )
->>>>>>> 21584983dfe60f59e5f1986a64c263817a8d9cda
 
         eventHub.addEventListener("messageHasBeenEdited", event => {
           renderMessagesAgain()
