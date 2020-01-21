@@ -73,18 +73,31 @@ export const eventComponent = () => {
         if (event.target.id === ("events__button")) {
           entryLog.innerHTML = `
 
+          <div class="input-group mb-3">
                 <input type="hidden" id="event__id" />
 
-                    Event: <input type="text" id="event__name" />
+                <div class="card-body">
+                  
+                
+                    <input type="text" id="event__name" placeholder="Title..."/>
+                    
+                    <input type="text" id="event__location" placeholder="Location..."/>
+                    
+                    <input type="text" id="event__date"  placeholder="Date..."/>
+                    
+                </div>
 
-                    Location: <input type="text" id="event__location" />
-
-                    Date: <input type="text" id="event__date" />
-
-                <button class="event__field" id="saveEvent">Save Event</button>
-
+                <div class="input-group-append">
+                <button class="btn btn-outline-primary" id="saveEvent">Save Event</button>
+                </div>
+    
+            </div>
+                
+                
                 
         `
+
+
         }
     })
 

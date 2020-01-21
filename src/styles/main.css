@@ -2,6 +2,8 @@
 @import 'buttons.css';
 @import 'friendcard.css';
 @import 'news.css';
+@import 'tasks.css';
+@import 'events.css';
 
 .completedTask {
   display: none;
@@ -31,7 +33,10 @@ h1, h2, h3 {
     background-color: #01BC3F;
 }
 
-
+.input-group {
+    display: flex;
+    justify-content: center;
+}
 
 .middle__container {
     padding: 20px;
