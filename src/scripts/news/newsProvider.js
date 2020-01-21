@@ -4,8 +4,8 @@ export const useNews = () =>
   news.slice().sort((a, b) => b.date - a.date);
 
 
-export const getNews = (user) => {
-  return fetch(`http://localhost:8088/news?userId=${user}`)
+export const getNews = () => {
+  return fetch("http://localhost:8088/news?_expand=user")
     .then(res => res.json())
     .then(parsedNews => (news = parsedNews));}
 

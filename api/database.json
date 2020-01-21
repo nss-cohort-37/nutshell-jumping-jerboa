@@ -175,12 +175,6 @@
   ],
   "news": [
     {
-      "id": 1,
-      "title": "hahah",
-      "synopsis": "nahahj",
-      "url": "hshshshsh"
-    },
-    {
       "title": "afsds",
       "synopsis": "asdfasd",
       "url": "asdfasd",
@@ -211,6 +205,22 @@
       "userId": 6,
       "date": 1579551488060,
       "id": 6
+    },
+    {
+      "title": "News",
+      "synopsis": "today",
+      "url": "www.news.com",
+      "userId": 5,
+      "date": 1579625957561,
+      "id": 7
+    },
+    {
+      "title": "adf",
+      "synopsis": "adf",
+      "url": "adsf",
+      "userId": 5,
+      "date": 1579626012506,
+      "id": 8
     }
   ],
   "friends": [
@@ -301,20 +311,6 @@
   ],
   "events": [
     {
-      "name": "dS",
-      "location": "ASDF",
-      "date": "ASDFA",
-      "userId": 5,
-      "id": 1
-    },
-    {
-      "name": "ASDFASD",
-      "location": "ASDFA",
-      "date": "ASDFADS",
-      "userId": 5,
-      "id": 2
-    },
-    {
       "name": "asdf",
       "location": "asdfa",
       "date": "asdfas",
@@ -355,6 +351,13 @@
       "date": "john",
       "userId": 6,
       "id": 8
+    },
+    {
+      "name": "af",
+      "location": "ads",
+      "date": "fadsafa",
+      "userId": 5,
+      "id": 10
     }
   ]
 }

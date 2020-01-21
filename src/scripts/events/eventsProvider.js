@@ -2,8 +2,8 @@ let events = [];
 
 export const useEvents = () => events.slice();
 
-export const getEvents = (user) =>
-  fetch(`http://localhost:8088/events?userId=${user}`)
+export const getEvents = () =>
+  fetch(`http://localhost:8088/events?_expand=user`)
     .then(res => res.json())
     .then(parsedEvents => (events = parsedEvents));
 
