@@ -31,7 +31,6 @@
       "id": 9
     },
     {
-<<<<<<< HEAD
       "name": "thania",
       "email": "thania",
       "password": "thania",
@@ -53,34 +52,10 @@
       "name": "test",
       "email": "test",
       "password": "test",
-=======
-      "name": "Twilight Sparkle",
-      "email": "TS",
-      "password": "1",
-      "id": 10
-    },
-    {
-      "name": "Rainbow Dash",
-      "email": "r",
-      "password": "1",
-      "id": 11
-    },
-    {
-      "name": "Fluttershy",
-      "email": "f",
-      "password": "1",
-      "id": 12
-    },
-    {
-      "name": "Pinkie Pie",
-      "email": "p",
-      "password": "1",
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
       "id": 13
     }
   ],
   "messages": [
-<<<<<<< HEAD
     {
       "id": 1,
       "message": "hhhh",
@@ -127,58 +102,10 @@
       "userId": 9,
       "date": 1579638607326,
       "id": 8
-=======
-    {
-      "id": 1,
-      "message": "HEY GUYS!",
-      "userId": 5
-    },
-    {
-      "id": 2,
-      "message": "I LOVE MLP!!!",
-      "userId": 5
-    },
-    {
-      "message": "TWILIGHT SPARKLE",
-      "userId": 10,
-      "date": 1579638415440,
-      "id": 25
-    },
-    {
-      "message": "CANT WAIT",
-      "userId": 11,
-      "date": 1579638513960,
-      "id": 26
-    },
-    {
-      "message": "TOMORROW",
-      "userId": 11,
-      "date": 1579638542751,
-      "id": 27
-    },
-    {
-      "message": "Learn how to code!",
-      "userId": 12,
-      "date": 1579638655014,
-      "id": 28
-    },
-    {
-      "message": "Whats up?",
-      "userId": 13,
-      "date": 1579638968904,
-      "id": 29
-    },
-    {
-      "message": "",
-      "userId": 5,
-      "date": 1579639210477,
-      "id": 30
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
     }
   ],
   "news": [
     {
-<<<<<<< HEAD
       "title": "hjhjhjh",
       "synopsis": "",
       "url": "",
@@ -256,29 +183,6 @@
       "url": "",
       "userId": 9,
       "date": 1579639602705,
-=======
-      "title": "News",
-      "synopsis": "today",
-      "url": "www.news.com",
-      "userId": 5,
-      "date": 1579625957561,
-      "id": 7
-    },
-    {
-      "title": "How to create your pony",
-      "synopsis": "a detailed tutorial on how to create your very own MLP icon",
-      "url": "www.mlpFANbase.com",
-      "userId": 5,
-      "date": 1579638200996,
-      "id": 9
-    },
-    {
-      "title": "What it Means to Be a Brony",
-      "synopsis": "everything you need to know about being a brony",
-      "url": "www.mylittlepony.com",
-      "userId": 12,
-      "date": 1579638622694,
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
       "id": 10
     }
   ],
@@ -302,49 +206,6 @@
       "friendId": 6,
       "userId": 9,
       "id": 4
-<<<<<<< HEAD
-=======
-    },
-    {
-      "friendId": 6,
-      "userId": 5,
-      "id": 5
-    },
-    {
-      "friendId": 5,
-      "userId": 5,
-      "id": 6
-    },
-    {
-      "friendId": 6,
-      "userId": 5,
-      "id": 7
-    },
-    {
-      "friendId": 5,
-      "userId": 9,
-      "id": 8
-    },
-    {
-      "friendId": 5,
-      "userId": 13,
-      "id": 9
-    },
-    {
-      "friendId": 6,
-      "userId": 13,
-      "id": 10
-    },
-    {
-      "friendId": 11,
-      "userId": 5,
-      "id": 11
-    },
-    {
-      "friendId": 5,
-      "userId": 5,
-      "id": 12
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
     }
   ],
   "tasks": [
@@ -374,7 +235,6 @@
       "id": 6,
       "text": "wash my pony",
       "userId": 5
-<<<<<<< HEAD
     }
   ],
   "events": [
@@ -396,30 +256,6 @@
       "name": "asdf",
       "location": "asdfa",
       "date": "asdfas",
-=======
-    },
-    {
-      "id": 12,
-      "text": "Clean my pony",
-      "userId": 5
-    },
-    {
-      "text": "Clean my pony",
-      "userId": 12,
-      "id": 13
-    },
-    {
-      "text": "learn how to make this site better",
-      "userId": 12,
-      "id": 14
-    }
-  ],
-  "events": [
-    {
-      "name": "Brony Meetup",
-      "location": "community center",
-      "date": "10/11/2020",
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
       "userId": 5,
       "id": 11
     },
@@ -431,12 +267,7 @@
       "id": 12
     },
     {
-<<<<<<< HEAD
-      "id": 8,
-      "name": "hhhhhh",
-      "location": "john",
-      "date": "john"
-=======
+
       "name": "Brony costume contest",
       "location": "NSS",
       "date": "1/21/2020",
@@ -449,7 +280,15 @@
       "date": "2/14/2020",
       "userId": 12,
       "id": 14
->>>>>>> ea73edccd2ed7e09ec51ad8498e2ad3a1c4db3f5
+
+    },
+    {
+      "name": "",
+      "location": "",
+      "date": "",
+      "userId": 5,
+      "id": 15
+
     }
   ]
 }
