@@ -13,7 +13,7 @@ const messageCard = (messageObject) => {
             
               <div> ${messageObject.message}</div>
               <button> ${messageObject.user.name}</button>
-              <button id="editMessage--${messageObject.id}">Edit</button>
+              <button class="edit" id="editMessage--${messageObject.id}">Edit</button>
             </section>
             
             `
