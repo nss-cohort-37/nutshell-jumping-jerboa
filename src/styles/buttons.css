@@ -33,3 +33,15 @@ button:hover {
     display: flex;
     justify-content: space-between;
 }
+
+.btn-outline-primary {
+    color: white !important;
+    border-color: white !important; 
+    background-color: white;  
+  }
+
+  .btn-outline-primary:hover {
+    background-color: white!important;
+    color: #01BC3F !important;
+    border-color: white !important;   
+  }

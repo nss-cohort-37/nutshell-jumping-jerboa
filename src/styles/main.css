@@ -8,8 +8,17 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/rainbow1.png") !important;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white !important;
 }
+
+h1, h2, h3 {
+    font-family: Creampuff;
+}
+
 .hide__content {
     display: none
 }
@@ -19,38 +28,22 @@ body{
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
     margin-top: 20px;
     padding: 10px;
+    background-color: #01BC3F;
 }
 
-/* .middle {
-    margin: 10px 20px 10px 20px;
-} */
 
-
-
-.events__container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-    overflow: scroll;
-    height: 210px;
-    justify-content: center;
-
-}
 
 .middle__container {
     padding: 20px;
 }
 
-.task__container {
+header {
+    background-color: #FFFF00 !important;
+    color: purple !important;
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-    overflow: scroll;
-    height: 210px;
-    justify-content: center;
+    justify-content: space-between !important;
 }
+
 
 .messageName:hover {
     cursor: pointer;

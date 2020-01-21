@@ -12,8 +12,10 @@
 
 <body>
     <article class="container container-xl">
-        <header class="navbar navbar-expand-lg navbar-light bg-light" class="nav__container">
+        <header class="navbar navbar-expand-lg" class="nav__container">
           <button class="nav-item btn" id="login__link">Log In</button>
+          <h1>My Little Brony</h1>
+
           <button id="register__link" class="nav-item btn">Create Account</button>
         </header>
 
@@ -28,19 +30,22 @@
         <section class="middle__container">
            
             <div class="tasks">
+                    <h2>Tasks</h2>
                 <div class ="save__task"></div>
                 <div class="middle task__container"></div>
 
             </div>
 
           <div class= "events">
+              <h2>Events</h2>
             <button class="btn btn-outline-primary" id="events__button">add Event</button>
             <div class="newEvents__container"></div>
             <div class="editEvents__container"></div>
+            <div class="middle events__container"></div>
           </div>
-          <div class="middle events__container"></div>
 
           <div class="news">
+                <h2>News</h2>
             <div class="form-inline news__form">
                 <div class="newsForm__container"></div>
                 <div class="editForm__container"></div>
@@ -62,6 +67,7 @@
 
     </article>
   </article>
+  
   <script type="module" src="scripts/main.js"></script>
 </body>
 

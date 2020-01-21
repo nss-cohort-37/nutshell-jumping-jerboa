@@ -63,13 +63,16 @@ const TaskFormComponent = () => {
     const render = () => {
         contentTarget.innerHTML = `
             
-              
+              <div class="input-group-append">
                 <input type="hidden" id="task-id" />
-                <div class="task__field">
-                    add task: <input type="text" id="task-text" />
-                </div>
-                <button class="btn btn-outline-primary task__field" id="saveTasks">Save</button>
                 
+                    <input type="text" id="task-text" placeholder="add new task..."/>
+                
+
+                <div class="input-group-append">
+                <button class="btn btn-outline-primary task__field" id="saveTasks">Save</button>
+                </div>
+                </div>
           
         `
     }
