@@ -93,7 +93,7 @@ const TaskListComponent = () => {
                                    <h4 class="card-title">${individualTask.text}</h4>
                                    <button class="btn btn-outline-primary btn-sm" id="completeTask--${individualTask.id}">Complete</button>
                                    <div class="card__buttons">
-                                    <div class="edit" id="deleteTask--${individualTask.id}">Delete</div>
+                                    <div class="edit" id="deleteTask--${individualTask.id}">delete</div>
                                     <div class="edit" id="editTask--${individualTask.id}">edit</div>
                                    </div>
                                </section>

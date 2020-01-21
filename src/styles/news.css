@@ -1,0 +1,23 @@
+.news__form {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.news__container {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 400px;
+    justify-content: center;
+}
+
+.news {
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+}
+
+.myNews {
+    background: white !important;
+    font-style: normal !important;
+}

@@ -39,7 +39,7 @@ export const MessageComponent = () => {
           if (clickEvent.target.id.startsWith("editMessage--")) {
            
             const [deletePrefix, messageId] = clickEvent.target.id.split("--")
-            
+
             const editMessage = new CustomEvent("editMessageClicked", {
               detail: {
                 messageId: messageId
@@ -82,7 +82,7 @@ export const MessageComponent = () => {
           `
           <input type="hidden" id="message-id" />
           <input type="text" name="title" id="message">  
-            <button class="saveMessage--button" id="saveMessage">Save Message</button> 
+            <button class="btn btn-primary saveMessage--button" id="saveMessage">Save Message</button> 
 
           ${
             theMessage.map(

@@ -3,6 +3,8 @@ import {
   deleteNews,
   getNews
 } from "./newsProvider.js"
+import { useUsers } from "../users/usersProvider.js";
+import colorizeCurrentUserNews from "./newsComponent.js";
 
 const contentTarget = document.querySelector(".news__container")
 const eventHub = document.querySelector(".container")
@@ -23,9 +25,7 @@ export const NewsComponent = () => {
     const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
 
 
-    getNews(currentUser).then(
-      () => {
-
+        const users = useUsers()
         const theCurrentUsersNews = useNews()
 
         const render = (theNews) => {
@@ -35,13 +35,14 @@ export const NewsComponent = () => {
             (newsObject) => {
               return `
             
-            <section class="card news__card">
+            <section class="card news__card newsCard--${newsObject.user.id}" id="newsCard--${newsObject.id}">
             <div class="card-body">
-            <div class=card-title"">${newsObject.title}</div>
+            <h4 class="card-title">${newsObject.title}</h4>
             <div> Summary: ${newsObject.synopsis}</div>
             <div> Url: ${newsObject.url}</div>
-            <button class="btn btn-primary" id="editNews--${newsObject.id}">Edit</button>
-            <button class="btn btn-primary" id="deleteNews--${newsObject.id}">Delete</button>
+            <div> posted by ${newsObject.user.name} </div>
+            <div class="edit" id="editNews--${newsObject.id}">edit</div>
+            <div class="edit" id="deleteNews--${newsObject.id}">delete</div>
             
             </div>
             
@@ -54,7 +55,7 @@ export const NewsComponent = () => {
         }
 
         render(theCurrentUsersNews)
-
+        colorizeCurrentUserNews()
         eventHub.addEventListener("click", clickEvent => {
           if (clickEvent.target.id.startsWith("deleteNews--")) {
 
@@ -134,8 +135,9 @@ export const NewsComponent = () => {
           renderNewsAgain()
         })
 
-
-      })
+        
+        
+      
 
   })
 
