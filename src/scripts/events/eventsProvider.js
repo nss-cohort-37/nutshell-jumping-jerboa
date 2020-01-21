@@ -2,10 +2,10 @@ let events = [];
 
 export const useEvents = () => events.slice();
 
-export const getEvents = () =>
-  fetch(`http://localhost:8088/events?_expand=user`)
+export const getEvents = () => {
+  return fetch(`http://localhost:8088/events?_expand=user`)
     .then(res => res.json())
-    .then(parsedEvents => (events = parsedEvents));
+    .then(parsedEvents => (events = parsedEvents));}
 
 export const editEvents = eventsObject => {
   return fetch(`http://localhost:8088/events/${eventsObject.id}`, {

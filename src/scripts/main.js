@@ -7,7 +7,7 @@ import TaskFormComponent from "./tasks/tasksComponent.js";
 import TaskListComponent from "./tasks/tasksList.js";
 import tasksCollection from "./tasks/tasksList.js";
 import { getUsers } from "./users/usersProvider.js";
-import { getEvents, useEvents } from "./events/eventsProvider.js";
+import { getEvents} from "./events/eventsProvider.js";
 import {eventComponent} from "./events/events.js";
 import EventsListComponent from "./events/eventsList.js";
 import { getNews } from "./news/newsProvider.js";
@@ -24,16 +24,17 @@ import {MessageListComponent} from "./messages/messagesList.js"
 // LoginFormButton()
 // RegisterButton()
 
-getTasks()
-  .then(tasksCollection)
-  .then(TaskFormComponent)
-  .then(TaskListComponent)
-
 
 
 getUsers()
     .then(loginFormList)
     .then(registerFormList)
+
+getTasks()
+  .then(tasksCollection)
+  .then(TaskFormComponent)
+  .then(TaskListComponent)
+
 getNews()
   .then(NewsListComponent)
   .then(NewsComponent)
@@ -44,7 +45,6 @@ getMessages()
 
     .then(friendsList)
 getEvents()
-    .then(useEvents)
     .then(eventComponent)
     .then(EventsListComponent)
 

@@ -24,8 +24,8 @@ const TaskListComponent = () => {
           })
 
         
-      }
-    )
+      
+    
 
     eventHub.addEventListener("click", clickEvent => {
       if (clickEvent.target.id.startsWith("completeTask--")) {
@@ -51,7 +51,7 @@ const TaskListComponent = () => {
             eventHub.dispatchEvent(editEvent)
           }
   
-          if (clickEvent.target.id.startsWith("deleteTask--")) {debugger
+          if (clickEvent.target.id.startsWith("deleteTask--")) {
             const [deletePrefix, taskId] = clickEvent.target.id.split("--")
             
             deleteTask(taskId).then(
@@ -119,6 +119,6 @@ const TaskListComponent = () => {
             
                 
                    
-                 }
+  })  }
     
 export default TaskListComponent

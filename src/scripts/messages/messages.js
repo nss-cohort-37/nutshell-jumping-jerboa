@@ -67,10 +67,7 @@ export const MessageComponent = () => {
       
         eventHub.addEventListener("click", clickEvent => {
           
-          if (clickEvent.target.id.startsWith("editMessage--")) {debugger
-           if(currentUser !== messageId) {
-             document.getElementById(`message--user${messageObject.messageId}`)= disable = true
-           }
+         
       
             const [deletePrefix, messageId] = clickEvent.target.id.split("--")
 
@@ -84,7 +81,7 @@ export const MessageComponent = () => {
             eventHub.dispatchEvent(editMessage)
           }
       
-        })
+        )
         
        
 

@@ -1,8 +1,4 @@
-import {
-  useNews,
-  deleteNews,
-  getNews
-} from "./newsProvider.js"
+import {useNews,deleteNews,getNews} from "./newsProvider.js"
 import { useUsers } from "../users/usersProvider.js";
 import colorizeCurrentUserNews from "./newsComponent.js";
 
@@ -25,7 +21,7 @@ export const NewsComponent = () => {
     const currentUser = parseInt(sessionStorage.getItem("activeUser"), 10)
 
 
-        const users = useUsers()
+        
         const theCurrentUsersNews = useNews()
 
         const render = (theNews) => {
