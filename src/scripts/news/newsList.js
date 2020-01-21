@@ -80,20 +80,23 @@ export const NewsListComponent = () => {
           if (event.target.id === ("news__button")) {
             entryLog.innerHTML = `
             
-            
+            <div class="input-group mb-3">
             <label for="newTitle"></label>
             
             <input type="hidden" id="news-id" />
             <input type="text" name="title" id="news-title" placeholder="Title...">
-        
+            <div class="card-body">
             <label for="newsSynopsis"></label>
             <input type="text" name="Synopsis" id="news-synopsis" placeholder="Synopsis...">
       
             <label for="newsUrl"></label>
             <input type="text" name="url" id="news-url" placeholder="URL">
             
-            
-            <button class='saveNews' id="saveNews">Save News</button>
+            <div class="input-group-append">
+            </div>
+            <button class="btn btn-outline-primary" id="saveNews">save</button>
+            </div>
+            </div>
             
             `
           }

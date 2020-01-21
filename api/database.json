@@ -29,183 +29,81 @@
       "email": "1",
       "password": "1",
       "id": 9
+    },
+    {
+      "name": "Twilight Sparkle",
+      "email": "TS",
+      "password": "1",
+      "id": 10
+    },
+    {
+      "name": "Rainbow Dash",
+      "email": "r",
+      "password": "1",
+      "id": 11
+    },
+    {
+      "name": "Fluttershy",
+      "email": "f",
+      "password": "1",
+      "id": 12
+    },
+    {
+      "name": "Pinkie Pie",
+      "email": "p",
+      "password": "1",
+      "id": 13
     }
   ],
   "messages": [
     {
       "id": 1,
-      "message": "edited",
+      "message": "HEY GUYS!",
       "userId": 5
     },
     {
       "id": 2,
-      "message": "dfasdfad",
+      "message": "I LOVE MLP!!!",
       "userId": 5
     },
     {
-      "message": "dfasdfad",
+      "message": "TWILIGHT SPARKLE",
+      "userId": 10,
+      "date": 1579638415440,
+      "id": 25
+    },
+    {
+      "message": "CANT WAIT",
+      "userId": 11,
+      "date": 1579638513960,
+      "id": 26
+    },
+    {
+      "message": "TOMORROW",
+      "userId": 11,
+      "date": 1579638542751,
+      "id": 27
+    },
+    {
+      "message": "Learn how to code!",
+      "userId": 12,
+      "date": 1579638655014,
+      "id": 28
+    },
+    {
+      "message": "Whats up?",
+      "userId": 13,
+      "date": 1579638968904,
+      "id": 29
+    },
+    {
+      "message": "",
       "userId": 5,
-      "date": 1579550967361,
-      "id": 3
-    },
-    {
-      "message": "hi",
-      "userId": 5,
-      "date": 1579550975427,
-      "id": 4
-    },
-    {
-      "id": 5,
-      "message": "edit",
-      "userId": 5
-    },
-    {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579551269003,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "message": "edited hey",
-      "userId": 5
-    },
-    {
-      "message": "asdfas",
-      "userId": 6,
-      "date": 1579551465708,
-      "id": 8
-    },
-    {
-      "message": "asdfas",
-      "userId": 6,
-      "date": 1579551465709,
-      "id": 9
-    },
-    {
-      "message": "double test",
-      "userId": 5,
-      "date": 1579553956839,
-      "id": 10
-    },
-    {
-      "message": "double test",
-      "userId": 5,
-      "date": 1579553957813,
-      "id": 11
-    },
-    {
-      "message": "double ",
-      "userId": 5,
-      "date": 1579554114977,
-      "id": 12
-    },
-    {
-      "message": "hey test",
-      "userId": 5,
-      "date": 1579554128331,
-      "id": 13
-    },
-    {
-      "message": "hey test",
-      "userId": 5,
-      "date": 1579554128333,
-      "id": 14
-    },
-    {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579554287764,
-      "id": 15
-    },
-    {
-      "message": "hey",
-      "userId": 5,
-      "date": 1579554287765,
-      "id": 16
-    },
-    {
-      "message": "hi",
-      "userId": 5,
-      "date": 1579554374400,
-      "id": 17
-    },
-    {
-      "message": "this will save twice",
-      "userId": 5,
-      "date": 1579554475104,
-      "id": 18
-    },
-    {
-      "message": "this will save twice",
-      "userId": 5,
-      "date": 1579554508005,
-      "id": 19
-    },
-    {
-      "message": "test ",
-      "userId": 5,
-      "date": 1579554797532,
-      "id": 20
-    },
-    {
-      "message": "DOODOO",
-      "userId": 5,
-      "date": 1579554826681,
-      "id": 21
-    },
-    {
-      "message": "there",
-      "userId": 5,
-      "date": 1579554931565,
-      "id": 22
-    },
-    {
-      "message": "there",
-      "userId": 5,
-      "date": 1579554931567,
-      "id": 23
-    },
-    {
-      "message": "test",
-      "userId": 5,
-      "date": 1579555611597,
-      "id": 24
+      "date": 1579639210477,
+      "id": 30
     }
   ],
   "news": [
-    {
-      "title": "afsds",
-      "synopsis": "asdfasd",
-      "url": "asdfasd",
-      "userId": 5,
-      "date": 1579533506637,
-      "id": 3
-    },
-    {
-      "title": "asdfads",
-      "synopsis": "afsdfas",
-      "url": "asdfasaf",
-      "userId": 5,
-      "date": 1579533513507,
-      "id": 4
-    },
-    {
-      "title": "asdf",
-      "synopsis": "asdf",
-      "url": "adf",
-      "userId": 5,
-      "date": 1579551248357,
-      "id": 5
-    },
-    {
-      "title": "hey",
-      "synopsis": "john news",
-      "url": "saldkf",
-      "userId": 6,
-      "date": 1579551488060,
-      "id": 6
-    },
     {
       "title": "News",
       "synopsis": "today",
@@ -215,12 +113,20 @@
       "id": 7
     },
     {
-      "title": "adf",
-      "synopsis": "adf",
-      "url": "adsf",
+      "title": "How to create your pony",
+      "synopsis": "a detailed tutorial on how to create your very own MLP icon",
+      "url": "www.mlpFANbase.com",
       "userId": 5,
-      "date": 1579626012506,
-      "id": 8
+      "date": 1579638200996,
+      "id": 9
+    },
+    {
+      "title": "What it Means to Be a Brony",
+      "synopsis": "everything you need to know about being a brony",
+      "url": "www.mylittlepony.com",
+      "userId": 12,
+      "date": 1579638622694,
+      "id": 10
     }
   ],
   "friends": [
@@ -258,6 +164,31 @@
       "friendId": 6,
       "userId": 5,
       "id": 7
+    },
+    {
+      "friendId": 5,
+      "userId": 9,
+      "id": 8
+    },
+    {
+      "friendId": 5,
+      "userId": 13,
+      "id": 9
+    },
+    {
+      "friendId": 6,
+      "userId": 13,
+      "id": 10
+    },
+    {
+      "friendId": 11,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "friendId": 5,
+      "userId": 5,
+      "id": 12
     }
   ],
   "tasks": [
@@ -279,9 +210,9 @@
       "userId": 5
     },
     {
+      "id": 5,
       "text": "take out the garbage.",
-      "userId": 5,
-      "id": 5
+      "userId": 5
     },
     {
       "id": 6,
@@ -289,75 +220,49 @@
       "userId": 5
     },
     {
-      "text": "take notes",
-      "userId": 5,
-      "id": 7
+      "id": 12,
+      "text": "Clean my pony",
+      "userId": 5
     },
     {
-      "text": "edited",
-      "userId": 5,
-      "id": 8
+      "text": "Clean my pony",
+      "userId": 12,
+      "id": 13
     },
     {
-      "text": "edited",
-      "userId": 5,
-      "id": 9
-    },
-    {
-      "text": "new task",
-      "userId": 5,
-      "id": 10
+      "text": "learn how to make this site better",
+      "userId": 12,
+      "id": 14
     }
   ],
   "events": [
     {
-      "name": "asdf",
-      "location": "asdfa",
-      "date": "asdfas",
+      "name": "Brony Meetup",
+      "location": "community center",
+      "date": "10/11/2020",
       "userId": 5,
-      "id": 3
+      "id": 11
     },
     {
-      "name": "dSDasd",
-      "location": "asdfad",
-      "date": "asdfads",
-      "userId": 6,
-      "id": 4
-    },
-    {
-      "name": "asdfasd",
-      "location": "asdfasf",
-      "date": "asdfasdf",
-      "userId": 6,
-      "id": 5
-    },
-    {
-      "name": "MAc",
-      "location": "mac",
-      "date": "mac",
-      "userId": 6,
-      "id": 6
-    },
-    {
-      "name": "john",
-      "location": "john",
-      "date": "john",
+      "name": "Art class",
+      "location": "art building",
+      "date": "11/21/2021",
       "userId": 5,
-      "id": 7
+      "id": 12
     },
     {
-      "name": "john",
-      "location": "john",
-      "date": "john",
-      "userId": 6,
-      "id": 8
-    },
-    {
-      "name": "af",
-      "location": "ads",
-      "date": "fadsafa",
+      "name": "Brony costume contest",
+      "location": "NSS",
+      "date": "1/21/2020",
       "userId": 5,
-      "id": 10
+      "id": 13
+    },
+    {
+      "name": "Pony Prance off",
+      "location": "the stables",
+      "date": "2/14/2020",
+      "userId": 12,
+      "id": 14
     }
   ]
 }
