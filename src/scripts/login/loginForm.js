@@ -17,15 +17,20 @@ const loginFormList = () => {
             contentTarget.innerHTML =
 
             `
+            <img class="login__icon" src="images/mlpgroup.png" alt="">
             <section class="card login__card">
+            <h2> Welcome Back!</h2>
+            <h3> please log in</h3>
+
             <div class="form-group">
             
-                <label for="username">email: </label>
+                <label for="username">email:        </label>
                 <input  type="text" name="username" id="loginUsername__form">
                 
             </div>
             <div class="form-group">
-                <label  for="loginpassword">Password:</label>
+
+                <label  for="loginpassword">Password: </label>
                 <input  type="password" name="loginpassword" id="loginPassword__form">
             
             </div>
@@ -33,6 +38,8 @@ const loginFormList = () => {
                 <div class="error"></div>
                 <button class="btn btn-outline-primary btn-lg" id="login__button">Log In</button>
             </section>
+
+
         `
         }
     })

@@ -87,12 +87,16 @@ const EventsListComponent = () => {
                         contentTarget.innerHTML = eventsCollection.map(
                             (individualEvent) => {
                                 return `
-                                <section class="event__card" id="eventsCard--${individualEvent.id}">
-                                <div>${individualEvent.name}</div>
-                                <div>Location: ${individualEvent.location}</div>
-                                <div>Date of Event: ${individualEvent.date}</div>
+                                <section class="card event__card" id="eventsCard--${individualEvent.id}">
+                                <h4 class="card-title">${individualEvent.name}</h4>
+                                <div class="card-subtitle mb-2 text-muted"> ${individualEvent.location}</div>
+                                <div>${individualEvent.date}</div>
+
+                                <div class="card-subtitle mb-2 text-muted"> posted by ${individualEvent.user.name} </div>
+                                <div class="card__buttons">
                                 <div class="edit" id="deleteEvent__${individualEvent.id}">delete</div>
                                 <div class="edit" id="editEvent__${individualEvent.id}">edit</div>
+                                </div>
                                 
                                 
                                 </section>                

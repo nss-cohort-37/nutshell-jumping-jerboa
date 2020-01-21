@@ -34,12 +34,13 @@ export const NewsComponent = () => {
             <section class="card news__card newsCard--${newsObject.user.id}" id="newsCard--${newsObject.id}">
             <div class="card-body">
             <h4 class="card-title">${newsObject.title}</h4>
-            <div> Summary: ${newsObject.synopsis}</div>
-            <div> Url: ${newsObject.url}</div>
-            <div> posted by ${newsObject.user.name} </div>
+            <div> ${newsObject.synopsis}</div>
+            <div> ${newsObject.url}</div>
+            <div class="card-subtitle mb-2 text-muted"> posted by ${newsObject.user.name} </div>
+            <div class="card__buttons">
             <div class="edit" id="editNews--${newsObject.id}">edit</div>
             <div class="edit" id="deleteNews--${newsObject.id}">delete</div>
-            
+            </div>
             </div>
             
             

@@ -22,9 +22,11 @@ const friendsList = () => {
     
         contentTarget.innerHTML = `
         <div class="search">
-        <div>search users:</div>
-        <input type="text" id="friend__searchBox">
+        
+        <input type="text" id="friend__searchBox" placeholder="search friends...">
+        <div class="input-group-append">
         <button class="btn btn-outline-primary btn-lg" id="reset__friendSearch">reset search</button>
+        </div
         </div>
         ${users.map(
             user => Friend(user)
